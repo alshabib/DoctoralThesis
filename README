@@ -8,4 +8,9 @@ Cheers,
 
 Ali <alshabibi.ali@gmail.com>
 
-PS. Oh and don't forget to compile the bibtext as well….
+PS. Oh and don't forget to compile the bibtext as well...
+
+REQUIREMENTS
+------------
+tkz-berge
+plots generated with OSX application "plot"
