@@ -1,0 +1,44 @@
+\newcommand{\PdfPsText}[2]{
+  \ifpdf
+     #1
+  \else
+     #2
+  \fi
+}
+
+\newcommand{\IncludeGraphicsS}[3]{
+  \PdfPsText{\includegraphics[scale=#2]{#1}}{\includegraphics[bb = #3, scale=#2]{#1}}
+}
+
+\newcommand{\IncludeGraphicsH}[3]{
+  \PdfPsText{\includegraphics[height=#2]{#1}}{\includegraphics[bb = #3, height=#2]{#1}}
+}
+
+\newcommand{\IncludeGraphicsW}[3]{
+  \PdfPsText{\includegraphics[width=#2]{#1}}{\includegraphics[bb = #3, width=#2]{#1}}
+}
+
+\newcommand{\InsertFig}[3]{
+  \begin{figure}[!htbp]
+    \begin{center}
+      #1
+      \caption{#2}
+      \label{#3}
+    \end{center}
+  \end{figure}
+}
+
+\newcommand{\ifigure}[4] {
+   \begin{figure}[!htbp]
+   	\begin{center}
+		\IncludeGraphicsS{#1}{#2}{}
+		\caption{#3}
+		\label{#4}
+	\end{center}
+   \end{figure}
+}
+
+
+%%% Local Variables: 
+%%% mode: latex
+%%% End: 

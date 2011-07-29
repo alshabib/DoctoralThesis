@@ -1,0 +1,63 @@
+\relax 
+\@writefile{toc}{\contentsline {chapter}{\numberline {7}Results \& Discussion}{107}}
+\@writefile{lof}{\addvspace {10\p@ }}
+\@writefile{lot}{\addvspace {10\p@ }}
+\newlabel{chap:results}{{7}{107}}
+\@writefile{toc}{\contentsline {section}{\numberline {7.1}Test Topologies \& Associated Routing Tables}{107}}
+\@writefile{lof}{\contentsline {figure}{\numberline {7.1}{\ignorespaces The Flower topology.}}{108}}
+\newlabel{fig:flower}{{7.1}{108}}
+\@writefile{lot}{\contentsline {table}{\numberline {7.1}{\ignorespaces The routing table associated to the Flower topology.}}{109}}
+\newlabel{tab:flowerRoute}{{7.1}{109}}
+\@writefile{lot}{\contentsline {table}{\numberline {7.2}{\ignorespaces The routing table associated to the Pentagon topology.}}{109}}
+\newlabel{tab:pentagonRoute}{{7.2}{109}}
+\@writefile{toc}{\contentsline {section}{\numberline {7.2}Parasite Traffic}{109}}
+\@writefile{toc}{\contentsline {section}{\numberline {7.3}Fully-Meshed Traffic}{109}}
+\@writefile{lof}{\contentsline {figure}{\numberline {7.2}{\ignorespaces The Pentagon topology.}}{110}}
+\newlabel{fig:Pentagon}{{7.2}{110}}
+\@writefile{toc}{\contentsline {section}{\numberline {7.4}Latency Tests}{111}}
+\@setckpt{Results/results}{
+\setcounter{page}{112}
+\setcounter{equation}{0}
+\setcounter{enumi}{2}
+\setcounter{enumii}{0}
+\setcounter{enumiii}{0}
+\setcounter{enumiv}{0}
+\setcounter{footnote}{0}
+\setcounter{mpfootnote}{0}
+\setcounter{part}{0}
+\setcounter{chapter}{7}
+\setcounter{section}{4}
+\setcounter{subsection}{0}
+\setcounter{subsubsection}{0}
+\setcounter{paragraph}{0}
+\setcounter{subparagraph}{0}
+\setcounter{figure}{2}
+\setcounter{table}{2}
+\setcounter{lofdepth}{1}
+\setcounter{lotdepth}{1}
+\setcounter{NAT@ctr}{0}
+\setcounter{parentequation}{0}
+\setcounter{ALC@line}{0}
+\setcounter{ALC@rem}{0}
+\setcounter{ALC@depth}{0}
+\setcounter{float@type}{8}
+\setcounter{algorithm}{0}
+\setcounter{KVtest}{0}
+\setcounter{subfigure}{0}
+\setcounter{subfigure@save}{2}
+\setcounter{subtable}{0}
+\setcounter{subtable@save}{2}
+\setcounter{tkzb@ca}{0}
+\setcounter{tkzb@cb}{0}
+\setcounter{tkzb@cc}{0}
+\setcounter{tkzb@v}{0}
+\setcounter{tkzb@cd}{0}
+\setcounter{tkzb@ce}{0}
+\setcounter{tkzb@cf}{0}
+\setcounter{tkzb@temp}{0}
+\setcounter{tkzb@int}{0}
+\setcounter{tkzb@next}{0}
+\setcounter{tkzb@ta}{5}
+\setcounter{tkzb@tb}{0}
+\setcounter{theorem}{2}
+}

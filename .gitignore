@@ -1,0 +1,8 @@
+*.gnuplot
+*.aux
+*.bbl
+*.log
+*.blg
+*.lof
+*.toc
+*.synctex*

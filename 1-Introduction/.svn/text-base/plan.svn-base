@@ -1,0 +1,32 @@
+Growth of the internet	-> extra challenges on ISP to provide good quality
+			-> extra issues in traffic engineering (eg. LSPs and LSRs setup) LS{P,R} = Label switched {Path, routers}
+			-> flip-side has provided with many redundant paths
+			-> therefore enhancing the potential for multipath algorithms
+
+Today's Internet	-> Many implemented on SPF technology
+			-> limiting the throughput between any pair
+			-> To solve congestion problems. Global optimization adjusting link costs (NP-Hard)
+				    (papers 1, 2 & 5 )
+
+		(Possible include the gimmick here)
+
+The Benefit of Multipath-> Simple example portraying:
+			      - Path Quantity
+			      - Path Independance
+			-> aggregate bandwidth
+			-> Recomputation can be preformed off-line
+			-> increased resiliency to failure.
+			-> Two aspects of multipath + link to contribution
+				      (Paper 3)
+
+Attributes of Multipath	-> Load-Balancing
+			-> Quality of service
+
+Contributions		-> Decoupling the underlying optimization problem into a set of local problems (Paper 4)
+			-> Guaranteed stability by avoiding oscillations
+			-> Topology Representation
+			-> In Network monitoring
+			-> Solution can co-exist with existing routing tech.
+			-> Media indepandance.
+
+Outline

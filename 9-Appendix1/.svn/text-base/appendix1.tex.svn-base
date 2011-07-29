@@ -1,0 +1,264 @@
+\chapter{Collection of derivations}
+\ifpdf
+  \graphicspath{{Appendix1/}}
+\else
+  \graphicspath{{Appendix1/}}
+\fi
+
+\label{appdx:A}
+
+\section{Disruptions in the Hash Threshold variant of ECMP}
+\label{sect:HTE} 
+
+TCP protocols perform superbly in situation where the path they flow does not change during the connection. Disruptions is the measure of how many flows will be affected by a path change. Consider now a hash based next hop selection, if our hash function is uniform then each next hop has an equivalent probability to be selected. Therefore, we can say that the hash-space is equally distributed between next-hops (or regions) as shown in Figure \ref{fig:HashSpace}
+
+\ifigure{HashSpace}{0.7}{Before and After the deletion of the third next hop possibility.}{fig:HashSpace}
+
+We can formalize this by considering the removal of region $K$ in the presence of $N$ regions. This causes the remaining $N-1$ regions to fill the $\frac{1}{N}$ space left by the removal of region K. Therefore each remaining region grows by $\frac{1}{N(N-1)}$. But now, this means that every non-end region has to be moved to accommodate for its now grown neighbor. So the first regions grows and causes the second region to shift towards towards region K by $\frac{1}{N(N-1)}$, and in turn the third region is caused to move by $\frac{2}{N(N-1)}$ and so on until both ends meet at the borders of $K$. These moves causes $\frac{i}{N(N-1)}$ flows in region $i+1$ to to be taken over by region $i$. Therefore, we have the following equations:
+
+ \begin{align}
+ disruptions &= \displaystyle\sum\limits_{i=1} ^{K-1}\frac{i}{N(N-1)} +  \displaystyle\sum\limits_{i=K+1} ^{N}\frac{i-K}{N(N-1)}\\
+ &= \frac{1}{N(N-1)} \left(  \displaystyle\sum\limits_{i=1} ^{K-1}i + \displaystyle\sum\limits_{i=K+1} ^{N}i-K\right)\\
+ &= \frac{(K-1)(K) + (N-K)(N-K+1)}{2N(N-1)}
+ \label{eq:disrupt}
+\end{align}
+
+Equation \ref{eq:disrupt} formalizes the number of flows which would be disrupted if a link on a path to a next-hop fails. 
+
+
+\section{Backpressure messages given in AMP}
+\label{sect:AMPCALC}
+
+A backpressure message in AMP is given by two factors; consider the link $\overline{XY}$:
+
+\begin{enumerate}
+\item The load on the links directly connected to $X$; and
+\item The contribution of the traffic routed at $X$ on the links from $Y$ to $Z$ ($\overline{YZ}$).
+\end{enumerate}
+
+The first point is immediate as the router can directly measure the congestion on their direct links, this is given by $\rho$. The remaining value describes the messages sent from the neighboring routers called $B_{Z\rightarrow Y}$ which is itself computed based on the two factors described above. Therefore, we can simply note BMs as $B_{Z\rightarrow Y}$, formally $BM(Y,X) = B_{Y\rightarrow X}$. $BM(Y,X)$ is the backpressure message sent from node $Y$ to node $X$. We can now define $ B_{Y\rightarrow X}$ as a function of the directly measurable congestion values and the $B_{Z_{i} \rightarrow Y}$, therefore we have:
+
+ \begin{align}
+B_{Y\rightarrow X} = f(\rho_{\overline{XY}_i}, B_{Z_{i} \rightarrow Y}), \forall i = 1, \dots, n
+ \label{eq:BM1}
+\end{align}
+
+As the contributions to congestion from traffic routed at $X$ vary at each neighboring router, since only a fraction of the overall traffic is routed to a particular neighbor, AMP proposes to define these varying contributions as a weighted average where the weight for link $\overline{YZ_{i}}$ corresponds to the ratio of traffic on the link $\overline{YZ_{i}}$ that has arrived from $X$ via $Y$ and the total traffic on the link $\overline{YZ_{i}}$. Therefore, we have:
+
+\begin{align}
+B_{Y\rightarrow X} = \displaystyle\sum\limits_{Z_{i} \in \Omega_{Y} \setminus X}\frac{\beta_{ \overline{ YZ_{ i } } } (X) } { \beta_{\overline{YZ_{i}}}} max(\rho_{\overline{XY}_i, B_{Y_{i} \rightarrow X}})
+ \label{eq:BM2}
+\end{align}
+
+Where $\Omega_{Y}$ is the set of all neighbors of node X,  $\beta_{\overline{YZ_{i}}} (X)$ is the number of bytes sent from node $X$ via $Y$ to $Z_{i}$, and finally $\beta_{\overline{YZ_{i}}}$ denotes the total number of bytes sent from any node $\in  \Omega_{Y} \backslash X$ via $Y$ to $Z_{i}$.
+\section{Dependence of Message Length and Interarrival times}
+\label{sect:KLEDEP}
+
+Let us derive the joint probability $P(v_n,a_{2n})$ between the message length and the inter-arrival time at some queue. For this consider the tandem network given in Figure \ref{fig:tandem}, and the following quantities:
+
+$v_n = $ message length of the $n^{th}$ message.
+
+$a_{in} = $ the inter-arrival time between the $(n-1)^{th}$ message and the $n^{th}$ at node i.
+
+Now we recall the assumptions of queuing systems with Markovian properties of Section \ref{sect:queues} where both $v_n$ and $a_in$ are described by exponential distributions, given by:
+
+\begin{align}
+\label{eq:inter1}
+p(a_{1n}) & = \lambda e^{-\lambda a_{1n}}\\
+p(v_n) & = \mu e^{-\mu v_n}
+\label{eq:msglen}
+\end{align}
+
+
+Due to these facts, Theorem \ref{th:Burke} holds and thereby we have that the inter-departure times at the first node in the tandem are identical to the inter-arrival times at the second node. Therefore we have:
+
+\begin{equation}
+p(a_{2n}) = \lambda e^{-\lambda a_{2n}}
+\label{eq:inter2}
+\end{equation}
+ 
+When the $n^{th}$ message leaves the first node:
+
+\begin{enumerate}
+ \item it is separated by a time gap $g_n$ from the $(n-1)^{th}$ message. Or,
+ \item transmitted immediately after the $(n-1)^{th}$ message is done transmitting.
+\end{enumerate}
+
+It is clear that Case 1. only occurs if the first node emptied out before receiving the $n^{th}$ message, which happens with probability $1-\rho$. The second case occurs when the first node is busy which has probability $\rho$. Where $\rho = \frac{\lambda}{\mu}$ is the utilization factor as defined in Section \ref{sect:queues}. We now have,
+
+\begin{equation}
+ p(v_n, a_{2n} = \rho P(v_n,a_{2n}|node~ 1~ busy) + (1-\rho)P(v_n,a_{2n}|node~ 1~ empty)
+\label{eq:jointprobtent}
+\end{equation}
+
+Trivially, the probability that message $n$ has length $v_n$ and arrives at $a_{2n}$ such that node 1 is busy is equal to the probability that $v_n = a_{2n}$, otherwise the queue would be idle. Thus,
+ 
+\begin{align*}
+P(v_n,a_{2n}|node~ 1~ busy) & = P(v_n = a_{2n}) \\
+&= \mu e^{-\mu v_n} \mu_0(a_{2n} - v_n) 
+\end{align*}
+
+Where $\mu_0$ is the unit impulse function.
+
+Alternatively, the probability that message $n$ has length $v_n$ and arrives at $a_{2n}$ such that node 1 is empty implies that $a_{2n} - v_n \neq 0 = g_n$, obviously otherwise the queue would always be busy, combined with the fact that the message length permits the queue to become empty. Due to the fact that $g_n$ follows the same distribution as $p(a_{2n})$, we therefore have,
+
+\begin{align*}
+P(v_n,a_{2n}|node~1~empty) & = P(a_{2n} | v_n,~ node~1~empty)P(v_n|node~1~empty)\\
+& = P(g_n = a_{2n} - v_n)P(v_n|node~ 1~ empty) \\
+& = P(g_n = a_{2n} - v_n)p(v_n) \\
+& = \lambda e^{-\lambda(a_{2n} - v_n)}\mu e^{-\mu v_n}
+\end{align*}
+
+And finally the overall expression becomes:
+
+\begin{equation}
+ p(v_n, a_{2n} = \mu e^{-\mu v_n} \mu_0(a_{2n} - v_n) + \lambda e^{-\lambda(a_{2n} - v_n)}\mu e^{-\mu v_n}
+\label{eq:jointprobfinal}
+\end{equation}
+
+By analysis of Equations \ref{eq:jointprobfinal}, \ref{eq:msglen} and \ref{eq:inter2}, we can clearly see that:
+
+\begin{equation*}
+ p(v_n, a_{2n}) \neq p(v_n)p(a_{2n})
+\end{equation*}
+
+which, by definition independent events, illustrates the deep dependence between the message lengths and the inter-arrival times. 
+
+
+\section{The Price of Anarchy in Multipath networks with linear cost functions}
+
+\label{sect:linearanarchy}
+
+First let us define more formally the delay of a flow as a function of the links $l$ it traverses as,
+
+\begin{equation}
+ C(f) = \displaystyle\sum\limits_{l} c_{l}(f_{l})f_{l}
+\label{eq:costflow}
+\end{equation}
+
+where,
+
+\begin{itemize}
+ \item $c_{l}$ is the cost induced by a flow on the link $l$,
+ \item $f_{l}$ is the amount of flow using link $l$.
+\end{itemize}
+
+Due to the fact that the model for Selfish routing is a static one, we only consider flows which are in a state of equilibrium. Therefore it is clear that a flow is not in a equilibrium state if it can shift some traffic to another link while reducing the overall delay of the network. Thus, we have the following definition:
+
+\begin{definition}
+  A flow $f$ is a \emph{Nash flow} if for all paths $P_{1}, P_{2} \in P$ and amounts $\delta \in ]0,f_{P_{1}}]$ of traffic, we have:
+  \begin{center}
+   $c_{P_{1}}(f) \leq c_{P_{2}}(\tilde{f})$\\
+  \end{center}
+   where,
+  \begin{center}
+  %\begin{equation*}
+  \[\tilde{f} = \left\{ 
+    \begin{array}{l l}
+	f + \delta & \quad \mbox{if $P = P_{1}$}\\
+	f - \delta & \quad \mbox{if $P = P_{2}$}\\ 
+	f & \quad \mbox{if $P \notin \{P_{1}, P_{2}\}$}\\   
+    \end{array} \right. \]
+  %\end{equation*}
+  \end{center}
+  \label{def:nashflow}
+\end{definition}
+
+Alongside the definition of a Nash flow, we have the straightforward definition of an optimal flow, which is simply:
+
+\begin{definition}
+ A flow $f$ is considered optimal if it is the flow with minimum possible delay. It is then denoted by $f^{*}$.
+\end{definition}
+
+As an example, a Nash flow is illustrated by the first situation in Figure \ref{fig:pigou}, whereas an optimal flow is depicted by the second situation.
+
+Finally, we can define the \emph{worst-possible} ratio between the cost of a Nash flow and that of an optimal flow. This ratio is known as the \emph{Price of Anarchy} and is given by the following relation and Equation \ref{eq:costflow}:
+
+\begin{equation}
+ \rho = \frac{C(f)}{C(f^{*})}
+  \label{eq:anarchy}
+\end{equation}
+
+Let us know postulate that optimal and Nash flows are the same things, just with different delay function. In order to establish this we must establish a relationship between optimal and Nash flow as a function of the delay functions.
+
+\begin{definition}
+ If $c$ is a differentiable delay function, then the corresponding marginal delay function $c^{*}$ is defined by:
+\begin{equation}
+ c^{*} = \frac{d}{dx}(x c(x))
+\end{equation}
+\label{def:marginalfunc}
+\end{definition}
+
+By considering definitions \ref{def:nashflow} and \ref{def:marginalfunc}, we can conclude that:
+
+\begin{definition}
+ Let G be a network defined by continuously differentiable delay functions and corresponding marginal delay functions $c^{*}$, then a flow $f$ for G is optimal if and only if it is at Nash equilibrium under the marginal delay functions.
+\label{def:optinash}
+\end{definition}
+
+Now let us consider a network with linear delay functions of the form $ax+b$, therefore by equation \ref{eq:costflow} we have the expression for the delay in such a network:
+
+\begin{equation}
+ C(f) = \displaystyle\sum\limits_{l} a_{l}f_{l}^{2} + b_{l}f_{l}
+\label{def:lindelay}
+\end{equation}
+
+and thus trivially we have that:
+
+\begin{definition}
+ Suppose a network has linear delay functions and $f$ is a flow at Nash equilibrium. Then,
+
+\begin{enumerate}
+ \item $c_{l}^{*}\left(\frac{f_{l}}{2}\right) = c_{l}(f_{l})$ for any link l;
+ \item The flow $\frac{f}{2}$ is optimal for the same network with have the link capacity.
+\end{enumerate}
+\label{def:linprop}
+\end{definition}
+
+The relations in definition \ref{def:linprop} are simply a result of applying Equation \ref{def:lindelay}. 
+
+We now can express the delay caused by an optimal flow as:
+
+\begin{equation}
+ C(f^{*}) \geq C\left(\frac{f}{2}\right) + \displaystyle\sum\limits_{l} c_{l}^{*}\left(\frac{f_{l}}{2}\right)\frac{f_{l}}{2}
+  \label{eq:costoptimal}
+\end{equation}
+
+By definition \ref{def:linprop} and equation \ref{eq:costflow} we have that:
+
+\begin{align}
+  \displaystyle\sum\limits_{l} c_{l}^{*}\left(\frac{f_{l}}{2}\right)\frac{f_{l}}{2} &= \frac{1}{2} \displaystyle\sum\limits_{l} c_{l}\left(f_{l}\right)f_{l} \\
+  &= \frac{1}{2}C(f)
+  \label{eq:righthand}
+\end{align}
+
+All we need to solve now is $C\left(\frac{f}{2}\right)$, this is simple if we recall that we are considering linear cost functions and that therefore we can apply Equation \ref{def:lindelay}:
+
+\begin{align}
+ C(\frac{f}{2}) &= \displaystyle\sum\limits_{l} \left(\frac{1}{2}a_{l}f_{l} + b_{l}\right)\frac{f_{l}}{2} \\
+& \geq \frac{1}{4}\displaystyle\sum\limits_{l} \left(a_{l}f_{l} + b_{l}\right)f_{l}\\
+& = \frac{1}{4} C(f)
+\label{eq:lefthand}
+\end{align}
+
+By introducing equations \ref{eq:lefthand} and \ref{eq:righthand} into Equations \ref{eq:costoptimal}, we obtain:
+
+\begin{equation}
+  C(f^{*}) \geq \frac{3}{4} C(f)
+  \label{eq:upper}
+\end{equation}
+
+Equation \ref{eq:upper} allows us to conclude that the Price of Anarchy for a multipath network with linear delay functions is at most $\frac{4}{3}$. This result can be extended to polynomial delay functions, and we obtain the following Price of Anarchy as a function of the degree of the polynomials:
+
+\begin{equation}
+ \rho = \frac{(p+1)\sqrt[p]{p+1}}{(p+1)\sqrt[p]{p+1}-p} \stackrel{p \rightarrow \infty}{=} \frac{p}{ln(p)}
+\end{equation}
+
+%needs marginal cost functions and introduction of some lemma from book!
+
+% ------------------------------------------------------------------------
+
+%%% Local Variables: 
+%%% mode: latex
+%%% TeX-master: "../thesis"
+%%% End: 

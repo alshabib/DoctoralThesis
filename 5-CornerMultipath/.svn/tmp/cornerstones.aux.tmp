@@ -1,0 +1,146 @@
+\relax 
+\citation{RFC1264}
+\citation{pat:IGRP}
+\citation{OMP}
+\@writefile{toc}{\contentsline {chapter}{\numberline {5}The MultiRoute Family}{63}}
+\@writefile{lof}{\addvspace {10\p@ }}
+\@writefile{lot}{\addvspace {10\p@ }}
+\newlabel{chap:cornerstones}{{5}{63}}
+\newlabel{sect:multiroutes}{{5}{63}}
+\@writefile{toc}{\contentsline {section}{\numberline {5.1}Path Discovery}{63}}
+\citation{DIJK}
+\@writefile{toc}{\contentsline {subsection}{\numberline {5.1.1}MultiRoute Path Construction (MRPC)}{64}}
+\newlabel{sect:MRPC}{{5.1.1}{64}}
+\@writefile{lof}{\contentsline {figure}{\numberline {5.1}{\ignorespaces Output of the MRPC algorithm\relax }}{65}}
+\newlabel{fig:mrpc}{{5.1}{65}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {5.1.2}Algorithm Sketch}{66}}
+\citation{SNMP}
+\citation{sFLOW}
+\@writefile{lof}{\contentsline {figure}{\numberline {5.2}{\ignorespaces Step-by-Step of MRPC according to the algorithm.\relax }}{67}}
+\@writefile{toc}{\contentsline {section}{\numberline {5.2}MMP - MultiRoute Monitoring Protocol}{67}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {5.2.1}MMP Packet Structure}{68}}
+\@writefile{lof}{\contentsline {figure}{\numberline {5.3}{\ignorespaces A \textit  {Routing Mask} with its associated routing table\relax }}{69}}
+\newlabel{fig:RM}{{5.3}{69}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {5.2.2}MMP Header}{69}}
+\@writefile{lof}{\contentsline {figure}{\numberline {5.4}{\ignorespaces MMP header\relax }}{70}}
+\newlabel{fig:gapheader}{{5.4}{70}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {5.2.3}Status Packet}{70}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {5.2.4}Update Packet}{70}}
+\@writefile{lof}{\contentsline {figure}{\numberline {5.5}{\ignorespaces MMP status packet\relax }}{71}}
+\newlabel{fig:gapstatus}{{5.5}{71}}
+\@writefile{lof}{\contentsline {figure}{\numberline {5.6}{\ignorespaces MMP update packet\relax }}{71}}
+\newlabel{fig:gapupdate}{{5.6}{71}}
+\citation{NOX}
+\citation{OPFW}
+\citation{REM}
+\@writefile{toc}{\contentsline {section}{\numberline {5.3}The Protocols}{72}}
+\newlabel{sect:proto}{{5.3}{72}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {5.3.1}The Classical - MultiRoute}{72}}
+\citation{MR}
+\citation{YaTG}
+\@writefile{lot}{\contentsline {table}{\numberline {5.1}{\ignorespaces The connectivity table. Each entry shows the number of possible paths.\relax }}{73}}
+\newlabel{tab:matrix}{{5.1}{73}}
+\@writefile{toc}{\contentsline {subsubsection}{Protocol Detail}{73}}
+\@writefile{lof}{\contentsline {figure}{\numberline {5.7}{\ignorespaces The reference topology.\relax }}{74}}
+\newlabel{fig:testbed}{{5.7}{74}}
+\@writefile{lof}{\contentsline {figure}{\numberline {5.8}{\ignorespaces Comparing a \textit  {Routing Mask} with its an Update Vector\relax }}{75}}
+\newlabel{fig:RMCompare}{{5.8}{75}}
+\newlabel{eq:MRTF}{{5.1}{75}}
+\newlabel{eq:MRRMLength}{{5.2}{75}}
+\@writefile{lof}{\contentsline {figure}{\numberline {5.9}{\ignorespaces The transfer function used in Classical MultiRoute.\relax }}{76}}
+\newlabel{fig:MRTF}{{5.9}{76}}
+\@writefile{lof}{\contentsline {figure}{\numberline {5.10}{\ignorespaces \textit  {Routing Mask} Length as a function of $N$ and $C$.\relax }}{77}}
+\newlabel{fig:MRRM3D}{{5.10}{77}}
+\@writefile{toc}{\contentsline {subsubsection}{Features and Limitations}{77}}
+\citation{FragBad}
+\@writefile{toc}{\contentsline {subsubsection}{Routing Algorithm}{78}}
+\newlabel{sect:MRAlgo}{{5.3.1}{78}}
+\@writefile{lof}{\contentsline {figure}{\numberline {5.11}{\ignorespaces Plot of the \textit  {Routing Mask} Limitation\relax }}{79}}
+\newlabel{fig:LenLim}{{5.11}{79}}
+\citation{SR}
+\@writefile{toc}{\contentsline {subsection}{\numberline {5.3.2}The Organizer - StepRoute}{81}}
+\@writefile{toc}{\contentsline {subsubsection}{Protocol Detail}{81}}
+\newlabel{sect:SRDetail}{{5.3.2}{81}}
+\newlabel{eq:SRTF}{{5.3}{81}}
+\@writefile{lot}{\contentsline {table}{\numberline {5.2}{\ignorespaces Congestion Classification.\relax }}{81}}
+\newlabel{tab:CongClass}{{5.2}{81}}
+\@writefile{lof}{\contentsline {figure}{\numberline {5.12}{\ignorespaces The transfer function used in StepRoute.\relax }}{82}}
+\newlabel{fig:SRTF}{{5.12}{82}}
+\newlabel{eq:SRRMLength}{{5.6}{83}}
+\@writefile{toc}{\contentsline {subsubsection}{Features and Limitations}{83}}
+\@writefile{toc}{\contentsline {subsubsection}{Routing Algorithm}{83}}
+\citation{DijkstraTerm}
+\@writefile{toc}{\contentsline {subsection}{\numberline {5.3.3}The Know-it-all - PathRoute}{85}}
+\@writefile{lof}{\contentsline {figure}{\numberline {5.13}{\ignorespaces Flowgraph of the distance diffusion computation.\relax }}{87}}
+\newlabel{fig:distflow}{{5.13}{87}}
+\newlabel{eq:PRRMLength}{{5.9}{88}}
+\@writefile{toc}{\contentsline {subsubsection}{Features and Limitations}{88}}
+\citation{Python}
+\@writefile{toc}{\contentsline {subsubsection}{Routing Algorithm}{89}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {5.3.4}Implementation Experience}{89}}
+\@writefile{lof}{\contentsline {figure}{\numberline {5.14}{\ignorespaces Inheritance/Dependency graph for MultiRoute-based protocols \relax }}{90}}
+\newlabel{fig:MRDeps}{{5.14}{90}}
+\citation{DIJK}
+\citation{OSPF}
+\citation{RFC2991}
+\@writefile{toc}{\contentsline {section}{\numberline {5.4}Commodity Protocols}{91}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {5.4.1}Shortest Path}{91}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {5.4.2}Equal Cost MultiPath}{91}}
+\@writefile{toc}{\contentsline {section}{\numberline {5.5}Theoretical Delay Model for MultiRoute-based protocols}{91}}
+\newlabel{eq:Delay1node}{{5.10}{92}}
+\newlabel{eq:overallDelay}{{5.11}{92}}
+\newlabel{eq:disruptions}{{5.12}{92}}
+\citation{RFC1264}
+\@writefile{lof}{\contentsline {figure}{\numberline {5.15}{\ignorespaces Flow delay as function of the load ($=\frac  {\lambda }{m\mu }$) and number of servers.\relax }}{93}}
+\newlabel{fig:delay}{{5.15}{93}}
+\@writefile{lof}{\contentsline {figure}{\numberline {5.16}{\ignorespaces Number of flows in each queue\relax }}{93}}
+\newlabel{fig:queuers}{{5.16}{93}}
+\@writefile{toc}{\contentsline {section}{\numberline {5.6}Summary}{94}}
+\@setckpt{CornerMulipath/cornerstones}{
+\setcounter{page}{95}
+\setcounter{equation}{12}
+\setcounter{enumi}{2}
+\setcounter{enumii}{0}
+\setcounter{enumiii}{0}
+\setcounter{enumiv}{0}
+\setcounter{footnote}{4}
+\setcounter{mpfootnote}{0}
+\setcounter{part}{0}
+\setcounter{chapter}{5}
+\setcounter{section}{6}
+\setcounter{subsection}{0}
+\setcounter{subsubsection}{0}
+\setcounter{paragraph}{0}
+\setcounter{subparagraph}{0}
+\setcounter{figure}{16}
+\setcounter{table}{2}
+\setcounter{ContinuedFloat}{0}
+\setcounter{lofdepth}{1}
+\setcounter{lotdepth}{1}
+\setcounter{NAT@ctr}{0}
+\setcounter{parentequation}{0}
+\setcounter{ALC@unique}{0}
+\setcounter{ALC@line}{0}
+\setcounter{ALC@rem}{0}
+\setcounter{ALC@depth}{0}
+\setcounter{float@type}{8}
+\setcounter{algorithm}{0}
+\setcounter{KVtest}{0}
+\setcounter{subfigure}{0}
+\setcounter{subfigure@save}{3}
+\setcounter{subtable}{0}
+\setcounter{subtable@save}{2}
+\setcounter{tkzb@ca}{0}
+\setcounter{tkzb@cb}{0}
+\setcounter{tkzb@cc}{0}
+\setcounter{tkzb@v}{0}
+\setcounter{tkzb@cd}{0}
+\setcounter{tkzb@ce}{0}
+\setcounter{tkzb@cf}{0}
+\setcounter{tkzb@temp}{0}
+\setcounter{tkzb@int}{0}
+\setcounter{tkzb@next}{0}
+\setcounter{tkzb@ta}{5}
+\setcounter{tkzb@tb}{0}
+\setcounter{theorem}{2}
+}

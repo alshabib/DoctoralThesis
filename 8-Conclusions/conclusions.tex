@@ -1,0 +1,80 @@
+\def\baselinestretch{1}
+\chapter{Conclusions \& Future Work} 
+\ifpdf
+    \graphicspath{{8-Conclusions/ConclusionsFigs/PNG/}{8-Conclusions/ConclusionsFigs/PDF/}{8-Conclusions/ConclusionsFigs/}}
+\else
+    \graphicspath{{8-Conclusions/ConclusionsFigs/EPS/}{8-Conclusions/ConclusionsFigs/}}
+\fi
+\begin{flushright}
+ \textit{\textquotedblleft Finally, in conclusion, let me say just
+this. \textquotedblright}\\
+\textit{-- Peter Sellers}
+\end{flushright}
+
+\section{Achievements}
+
+The objective of this thesis was to revisit the concept of congestion-aware routing. This idea was introduced in the early days of the ARPANET but quickly abandoned due to out of order delivery of packets which caused the effective throughput of the network to be catastrophic. To achieve this goal, we have divided the problem into three sub-problems, namely:
+
+\begin{enumerate}
+\item Path Construction -  The multiple path discovery process relies on the existence of a shortest path between source and destination points. After establishing the shortest path cost (the reference cost), each alternate path is computed whose cost is within a reasonable delta of the reference cost. 
+\item Network Monitoring - The statistics are polled locally by the router and sent to neighboring routers, this process is performed in-band and not by an external monitoring process. Then, depending on the transfer function used, a representation of the congestion is derived.
+\item Topology Representation - Each router maintains its own routing vector, consisting of congestion representation of its paths to different networks. Routing vectors are then exchanged with neighboring routers using the Monitoring protocol .
+\end{enumerate}
+
+Using this approach we have been able to build three different congestion-aware protocols which contrast with previous multipath protocols in several aspects. First, they treat alternative paths as another possibility rather than a route to take in case of failure. Second, they do not require full knowledge of the network topology as they obtain the congestion status of their direct neighbors only. Finally, they avoid out-of-order packet distribution by using flows as a basis for routing rather than packets. This coupled with the fact that routing decisions are immutable completely side-steps the problem of out-of-order packets. On the other hand, this raised the following question: \textit{Can a protocol with such restrictions still provide a benefit in term of performance?} We believe that this thesis shows that the answer to this question is \textbf{Yes}!
+
+Another aspect of this thesis was the implementation a real world testbed in which our congestion-aware protocols were deployed. The design, construction and evaluation of this testbed was carefully studied. First, it was designed so that it could easily be extended, for example adding an end node to the test bed is as easy as entering a few configuration lines in the file server and then booting the desired end node. This end node would then have all the functionality previously existing nodes have. Second, the testbed was constructed in such a was that it would be simple to interconnect and physically simple to extend. Finally, by designing and constructing the system with the knowledge that the system would have to be tested, it was simple to provide connectivity to the test machines and the traffic generators. 
+
+\section{Summary of Results}
+
+Based on the results presented in Chapter \ref{chap:results} we believe that we can say that our congestion aware protocols provide an significant increase in performance when compared to legacy protocols. This results have been tested on two representative topologies.
+
+Our protocols perform best when asked to route around a congested area. We show that is some cases our protocols provide line rate performance when shortest path or Equal Cost MultiPath (ECMP) provide close to zero throughput. We also show that even though our protocols are congestion-aware, they provide a predicable throughput where ECMP could not. 
+
+We have also shown that in the face of fierce adversity, ie. Full-Mesh traffic, our protocols provide an increased level of performance. This worst case scenario demonstrates that these protocols can be expected to deliver increased performance on non-traffic engineered networks.
+
+While we show that our protocols present increased performance, a network engineer deploying such protocols should study the requirements of the network he is implementing. We believe the questions that need to be answered are: 
+
+\begin{enumerate}
+\item Does the expected traffic tolerate loss?  
+\item Does the expected traffic tolerate delay?
+\item Does the expected traffic consist of short or long lived flows? 
+\item Is the traffic on this network expected to be traced?
+\end{enumerate}
+
+The answers to these questions will determine which protocol to use and/or the type of topology to deploy (either equal cost lengths or variable alternative path lengths).
+
+\section{Future Work}
+
+As with any thesis, many lines of research remain. We shall state a few here in the form of open ended questions:
+
+\begin{itemize}
+\item How does one trace traffic through a multipath network? Is debugging even possible?
+\item What are the effects of using other metrics as a basis for congestion detection?
+\item Do our congestion-aware routing protocols scale to networks with hundreds of routers?
+\item How can the feedback loop required for congestion-aware routing protocols be made as small as possible?
+\item Will it ever be possible to mathematically model multipath networks accurately?
+\end{itemize}
+
+%What is the strongest and most important statement that you can make from your
+%observations? 
+%
+%If you met the reader at a meeting six months from now, what do you want them to
+%remember about your paper? 
+%
+%Refer back to problem posed, and describe the conclusions that you reached from
+%carrying out this investigation, summarize new observations, new
+%interpretations, and new insights that have resulted from the present work.
+%
+%Include the broader implications of your results. 
+%
+%Do not repeat word for word the abstract, introduction or discussion.
+
+%%% ----------------------------------------------------------------------
+
+% ------------------------------------------------------------------------
+
+%%% Local Variables: 
+%%% mode: latex
+%%% TeX-master: "../thesis"
+%%% End: 

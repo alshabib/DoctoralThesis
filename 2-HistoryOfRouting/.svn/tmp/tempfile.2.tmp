@@ -1,0 +1,181 @@
+\relax 
+\citation{Tanenbaum}
+\@writefile{toc}{\contentsline {chapter}{\numberline {2}History of Routing}{9}}
+\@writefile{lof}{\addvspace {10\p@ }}
+\@writefile{lot}{\addvspace {10\p@ }}
+\newlabel{chap:hist}{{2}{9}}
+\@writefile{toc}{\contentsline {section}{\numberline {2.1}Networking Fundamentals}{9}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {2.1.1}Reference Models}{9}}
+\newlabel{fig:refmodel}{{2.1a}{10}}
+\newlabel{sub@fig:refmodel}{{(a)}{a}}
+\newlabel{fig:osimodel}{{2.1b}{10}}
+\newlabel{sub@fig:osimodel}{{(b)}{b}}
+\@writefile{lof}{\contentsline {figure}{\numberline {2.1}{\ignorespaces Inter-networking models}}{10}}
+\@writefile{lof}{\contentsline {subfigure}{\numberline{(a)}{\ignorespaces {The Reference Model.}}}{10}}
+\@writefile{lof}{\contentsline {subfigure}{\numberline{(b)}{\ignorespaces {The OSI Model}}}{10}}
+\newlabel{fig:refmodels}{{2.1}{10}}
+\@writefile{toc}{\contentsline {subsubsection}{The OSI Model}{10}}
+\citation{CerfKahn}
+\@writefile{toc}{\contentsline {subsubsection}{The TCP/IP Model}{11}}
+\@writefile{lof}{\contentsline {figure}{\numberline {2.2}{\ignorespaces The TCP/IP Model}}{12}}
+\newlabel{fig:tcpip}{{2.2}{12}}
+\citation{aloha}
+\citation{Tanenbaum}
+\@writefile{toc}{\contentsline {subsection}{\numberline {2.1.2}Foundations of Ethernet.}{13}}
+\citation{Tanenbaum}
+\citation{EtherCapa}
+\@writefile{lof}{\contentsline {figure}{\numberline {2.3}{\ignorespaces The concept of Ethernet, as drawn originally by Bob Metcalfe.}}{14}}
+\newlabel{fig:ethernet}{{2.3}{14}}
+\@writefile{lof}{\contentsline {figure}{\numberline {2.4}{\ignorespaces A simplified algorithm sketch for CSMA/CD}}{15}}
+\newlabel{fig:CSMA}{{2.4}{15}}
+\citation{IEEE802.3}
+\citation{EtherGuide}
+\citation{IEEE802.3}
+\@writefile{lof}{\contentsline {figure}{\numberline {2.5}{\ignorespaces Structure of an 802.3 Ethernet Frame.}}{16}}
+\newlabel{fig:Ethernet}{{2.5}{16}}
+\citation{RFC793}
+\citation{IEEE802.1D}
+\citation{IEEE802.3i}
+\@writefile{toc}{\contentsline {subsection}{\numberline {2.1.3}Evolution of Ethernet - The fast and the faster.}{17}}
+\@writefile{lof}{\contentsline {figure}{\numberline {2.6}{\ignorespaces A bridged Ethernet network.}}{18}}
+\newlabel{fig:bridge}{{2.6}{18}}
+\citation{IEEE802.3j}
+\citation{IEEE802.3u}
+\citation{IEEE802.3z}
+\citation{IEEE802.5}
+\@writefile{lof}{\contentsline {figure}{\numberline {2.7}{\ignorespaces A switched Ethernet network.}}{19}}
+\newlabel{fig:switch}{{2.7}{19}}
+\citation{InfiniBand1,InifiniBand2}
+\@writefile{toc}{\contentsline {section}{\numberline {2.2}High Performance Networks - InfiniBand}{20}}
+\citation{IBACurrentRoute}
+\citation{IBAExtensions}
+\citation{DataNetworks}
+\citation{Ford1956}
+\citation{Bellman1958}
+\citation{WARSHALL1962}
+\citation{Dijkstra1959}
+\citation{ARPANET}
+\@writefile{toc}{\contentsline {section}{\numberline {2.3}Routing - Where to next?}{21}}
+\citation{DataNetworks}
+\citation{Tanenbaum}
+\@writefile{toc}{\contentsline {subsection}{\numberline {2.3.1}Some Issues in Routing}{22}}
+\newlabel{eq:THEQOF}{{2.1}{22}}
+\newlabel{eq:THEQOFR}{{2.2}{22}}
+\@writefile{lof}{\contentsline {figure}{\numberline {2.8}{\ignorespaces Interaction between Transport and Network Layer\relax }}{23}}
+\newlabel{fig:RouteFlowControl}{{2.8}{23}}
+\@writefile{lof}{\contentsline {figure}{\numberline {2.9}{\ignorespaces Delay vs. Load curves - The good and bad Routing.\relax }}{24}}
+\newlabel{fig:GoodBadRouter}{{2.9}{24}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {2.3.2}Properties of Routing Algorithms}{25}}
+\@writefile{lof}{\contentsline {figure}{\numberline {2.10}{\ignorespaces Conflict between fairness and optimality.\relax }}{25}}
+\newlabel{fig:fairvsopti}{{2.10}{25}}
+\citation{DataNetworks}
+\@writefile{toc}{\contentsline {subsection}{\numberline {2.3.2}Properties of Routing Algorithms}{23}}
+\@writefile{toc}{\contentsline {section}{\numberline {2.4}Classification and the Evolution of Routing Algorithms.}{23}}
+\citation{Dijkstra1959}
+\citation{WARSHALL1962}
+\citation{Bellman1958}
+\citation{OSPF}
+\@writefile{toc}{\contentsline {section}{\numberline {2.4}Classification and the Evolution of Routing Algorithms.}{26}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {2.4.1}Static Algorithms}{26}}
+\newlabel{sect:static}{{2.4.1}{26}}
+\citation{Bellman1958,Ford1956}
+\citation{RIP}
+\citation{ARPAORIG}
+\citation{EIGRP}
+\@writefile{toc}{\contentsline {subsection}{\numberline {2.4.2}Adaptive Algorithms}{27}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {2.4.3}Distance Vector Routing}{27}}
+\@writefile{lof}{\contentsline {figure}{\numberline {2.11}{\ignorespaces Evolution of Distance Vector Algorithms\relax }}{28}}
+\newlabel{fig:DVEvo}{{2.11}{28}}
+\citation{Cegrell75}
+\newlabel{tab:countinfgood}{{2.1a}{29}}
+\newlabel{sub@tab:countinfgood}{{(a)}{a}}
+\newlabel{tab:countinfbad}{{2.1b}{29}}
+\newlabel{sub@tab:countinfbad}{{(b)}{b}}
+\@writefile{lot}{\contentsline {table}{\numberline {2.1}{\ignorespaces Count-to-infinity problem.\relax }}{29}}
+\@writefile{lot}{\contentsline {subtable}{\numberline{(a)}{\ignorespaces {A good news situation}}}{29}}
+\@writefile{lot}{\contentsline {subtable}{\numberline{(b)}{\ignorespaces {A bad news situation}}}{29}}
+\newlabel{tab:countinf}{{2.1}{29}}
+\citation{DUAL}
+\citation{DijkstraTerm}
+\citation{DijkstraTerm}
+\citation{EIGRP}
+\citation{LPA}
+\citation{EDVA}
+\@writefile{toc}{\contentsline {subsubsection}{Some important Algorithms}{30}}
+\newlabel{sect:DUAL}{{2.4.3}{30}}
+\citation{Dijkstra1959}
+\@writefile{lof}{\contentsline {figure}{\numberline {2.12}{\ignorespaces Evolution of Implemented Routing Algorithms\relax }}{31}}
+\newlabel{fig:CurrEvo}{{2.12}{31}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {2.4.4}Link State Routing}{31}}
+\citation{Huitema}
+\@writefile{toc}{\contentsline {subsection}{\numberline {2.4.4}Link State Routing}{30}}
+\citation{OSPF}
+\citation{RIP}
+\citation{ARPAROUTE}
+\citation{RFC3787}
+\citation{CANTOR74}
+\citation{OSPF}
+\citation{RFC3787}
+\citation{CANTOR74}
+\citation{Gallager-mindelay}
+\citation{NearOPT}
+\@writefile{toc}{\contentsline {subsection}{\numberline {2.4.5}Optimal Routing}{33}}
+\@writefile{lof}{\contentsline {figure}{\numberline {2.13}{\ignorespaces Evolution of Optimal Routing Algorithms\relax }}{34}}
+\newlabel{fig:OptEvo}{{2.13}{34}}
+\@writefile{toc}{\contentsline {section}{\numberline {2.5}Summary}{34}}
+\@setckpt{HistoryOfRouting/history}{
+\setcounter{page}{35}
+\setcounter{equation}{2}
+\setcounter{enumi}{4}
+\setcounter{enumii}{0}
+\setcounter{enumiii}{0}
+\setcounter{enumiv}{0}
+\setcounter{footnote}{0}
+\setcounter{mpfootnote}{0}
+\setcounter{part}{0}
+\setcounter{chapter}{2}
+\setcounter{section}{5}
+\setcounter{subsection}{0}
+\setcounter{subsubsection}{0}
+\setcounter{paragraph}{0}
+\setcounter{subparagraph}{0}
+\setcounter{figure}{13}
+\setcounter{table}{1}
+\setcounter{lofdepth}{1}
+\setcounter{lotdepth}{1}
+\setcounter{NAT@ctr}{0}
+\setcounter{parentequation}{0}
+\setcounter{ALC@line}{0}
+\setcounter{ALC@rem}{0}
+\setcounter{ALC@depth}{0}
+\setcounter{float@type}{8}
+\setcounter{algorithm}{0}
+\setcounter{KVtest}{0}
+\setcounter{subfigure}{0}
+\setcounter{subfigure@save}{2}
+\setcounter{subtable}{0}
+\setcounter{subtable@save}{2}
+\setcounter{tkzb@ca}{0}
+\setcounter{tkzb@cb}{0}
+\setcounter{tkzb@cc}{0}
+\setcounter{tkzb@v}{0}
+\setcounter{tkzb@cd}{0}
+\setcounter{tkzb@ce}{0}
+\setcounter{tkzb@cf}{0}
+\setcounter{tkzb@temp}{0}
+\setcounter{tkzb@int}{0}
+\setcounter{tkzb@next}{0}
+\setcounter{tkzb@ta}{0}
+\setcounter{tkzb@tb}{0}
+\setcounter{prim@r}{0}
+\setcounter{prim@q}{0}
+\setcounter{prim@a}{0}
+\setcounter{tprim@a}{0}
+\setcounter{tprim@b}{0}
+\setcounter{prim@n}{0}
+\setcounter{prim@d}{0}
+\setcounter{prim@b}{0}
+\setcounter{tkza@int}{0}
+\setcounter{tkza@tmp}{0}
+\setcounter{NbOfPrimFactor}{0}
+}

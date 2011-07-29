@@ -1,0 +1,114 @@
+\relax 
+\@writefile{toc}{\contentsline {chapter}{\numberline {7}Results \& Discussion}{105}}
+\@writefile{lof}{\addvspace {10\p@ }}
+\@writefile{lot}{\addvspace {10\p@ }}
+\newlabel{chap:results}{{7}{105}}
+\@writefile{toc}{\contentsline {section}{\numberline {7.1}Test Topologies \& Associated Routing Tables}{105}}
+\@writefile{lof}{\contentsline {figure}{\numberline {7.1}{\ignorespaces The Flower topology.\relax }}{106}}
+\newlabel{fig:flower}{{7.1}{106}}
+\@writefile{lot}{\contentsline {table}{\numberline {7.1}{\ignorespaces The routing table associated to the Flower topology.\relax }}{107}}
+\newlabel{tab:flowerRoute}{{7.1}{107}}
+\@writefile{lot}{\contentsline {table}{\numberline {7.2}{\ignorespaces The routing table associated to the Pentagon topology.\relax }}{107}}
+\newlabel{tab:pentagonRoute}{{7.2}{107}}
+\@writefile{toc}{\contentsline {section}{\numberline {7.2}Parasite Traffic}{107}}
+\@writefile{lof}{\contentsline {figure}{\numberline {7.2}{\ignorespaces The Pentagon topology.\relax }}{108}}
+\newlabel{fig:Pentagon}{{7.2}{108}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {7.2.1}Parasite Traffic on the Flower Topology}{109}}
+\@writefile{toc}{\contentsline {subsubsection}{Shortest Path versus MultiRoute}{109}}
+\@writefile{lof}{\contentsline {figure}{\numberline {7.3}{\ignorespaces Shortest Path versus MultiRoute in the presence of Parasitic traffic.\relax }}{109}}
+\newlabel{fig:MRvsSPFlower}{{7.3}{109}}
+\@writefile{toc}{\contentsline {subsubsection}{Shortest Path versus StepRoute}{110}}
+\@writefile{lof}{\contentsline {figure}{\numberline {7.4}{\ignorespaces Shortest Path versus StepRoute in the presence of Parasitic traffic.\relax }}{110}}
+\newlabel{fig:SRvsSPFlower}{{7.4}{110}}
+\@writefile{toc}{\contentsline {subsubsection}{Shortest Path versus PathRoute}{111}}
+\@writefile{lof}{\contentsline {figure}{\numberline {7.5}{\ignorespaces Shortest Path versus PathRoute in the presence of Parasitic traffic.\relax }}{111}}
+\newlabel{fig:PRvsSPFlower}{{7.5}{111}}
+\@writefile{toc}{\contentsline {subsubsection}{Hash-Threshold versus MultiRoute}{112}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {7.2.2}Parasite Traffic on the Pentagon}{112}}
+\@writefile{toc}{\contentsline {subsubsection}{Shortest Path versus MultiRoute}{112}}
+\newlabel{fig:MRvsHTEa}{{7.6a}{113}}
+\newlabel{sub@fig:MRvsHTEa}{{(a)}{a}}
+\newlabel{fig:MRvsHTEb}{{7.6b}{113}}
+\newlabel{sub@fig:MRvsHTEb}{{(b)}{b}}
+\@writefile{lof}{\contentsline {figure}{\numberline {7.6}{\ignorespaces A comparison of the predictability of MultiRoute versus Hash Threshold\relax }}{113}}
+\@writefile{lof}{\contentsline {subfigure}{\numberline{(a)}{\ignorespaces {MultiRoute's throughput variation}}}{113}}
+\@writefile{lof}{\contentsline {subfigure}{\numberline{(b)}{\ignorespaces {Hash Threshold's throughput variation}}}{113}}
+\newlabel{fig:MRvsHTEFlower}{{7.6}{113}}
+\@writefile{lof}{\contentsline {figure}{\numberline {7.7}{\ignorespaces Shortest Path versus MultiRoute in the presence of Parasitic Traffic.\relax }}{114}}
+\newlabel{fig:MRvsSPPentagon}{{7.7}{114}}
+\@writefile{toc}{\contentsline {subsubsection}{Shortest Path versus StepRoute}{114}}
+\@writefile{toc}{\contentsline {subsubsection}{Shortest Path versus PathRoute}{114}}
+\@writefile{lof}{\contentsline {figure}{\numberline {7.8}{\ignorespaces Shortest Path versus StepRoute in the presence of Parasitic Traffic.\relax }}{115}}
+\newlabel{fig:SRvsSPPentagon}{{7.8}{115}}
+\@writefile{lof}{\contentsline {figure}{\numberline {7.9}{\ignorespaces Shortest Path versus PathRoute in the presence of Parasitic Traffic.\relax }}{116}}
+\newlabel{fig:PRvsSPPentagon}{{7.9}{116}}
+\@writefile{toc}{\contentsline {section}{\numberline {7.3}Fully-Meshed Traffic}{116}}
+\citation{BayesNetwork}
+\@writefile{toc}{\contentsline {subsection}{\numberline {7.3.1}Fully-Meshed Traffic on the Flower}{117}}
+\@writefile{lof}{\contentsline {figure}{\numberline {7.10}{\ignorespaces Fully-Meshed Traffic running on the Flower.\relax }}{117}}
+\newlabel{fig:FMFlower}{{7.10}{117}}
+\@writefile{lof}{\contentsline {figure}{\numberline {7.11}{\ignorespaces Successive Fully-Meshed Traffic running on the Flower.\relax }}{118}}
+\newlabel{fig:FMFlowerProbable}{{7.11}{118}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {7.3.2}Fully-Meshed Traffic on the Pentagon}{118}}
+\@writefile{lof}{\contentsline {figure}{\numberline {7.12}{\ignorespaces Fully-Meshed Traffic running on the Pentagon.\relax }}{119}}
+\newlabel{fig:FMPentagon}{{7.12}{119}}
+\@writefile{toc}{\contentsline {section}{\numberline {7.4}Latency \& Packet Loss Tests}{119}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {7.4.1}Latency \& Packet loss on the Flower}{120}}
+\@writefile{lof}{\contentsline {figure}{\numberline {7.13}{\ignorespaces Latency plots for protocols running on the Flower.\relax }}{120}}
+\newlabel{fig:FlowerLatency}{{7.13}{120}}
+\@writefile{lof}{\contentsline {figure}{\numberline {7.14}{\ignorespaces Packet Loss for protocols running on the Flower.\relax }}{121}}
+\newlabel{fig:FlowerPacketLoss}{{7.14}{121}}
+\@writefile{lof}{\contentsline {figure}{\numberline {7.15}{\ignorespaces Latency plots for protocols running on the Pentagon.\relax }}{121}}
+\newlabel{fig:PentagonLatency}{{7.15}{121}}
+\@writefile{lof}{\contentsline {figure}{\numberline {7.16}{\ignorespaces Packet Loss for protocols running on the Pentagon.\relax }}{122}}
+\newlabel{fig:PentagonPacketLoss}{{7.16}{122}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {7.4.2}Latency \& Packet loss on the Pentagon}{122}}
+\@writefile{toc}{\contentsline {section}{\numberline {7.5}Summary}{122}}
+\@setckpt{Results/results}{
+\setcounter{page}{124}
+\setcounter{equation}{0}
+\setcounter{enumi}{2}
+\setcounter{enumii}{0}
+\setcounter{enumiii}{0}
+\setcounter{enumiv}{0}
+\setcounter{footnote}{0}
+\setcounter{mpfootnote}{0}
+\setcounter{part}{0}
+\setcounter{chapter}{7}
+\setcounter{section}{5}
+\setcounter{subsection}{0}
+\setcounter{subsubsection}{0}
+\setcounter{paragraph}{0}
+\setcounter{subparagraph}{0}
+\setcounter{figure}{16}
+\setcounter{table}{2}
+\setcounter{ContinuedFloat}{0}
+\setcounter{lofdepth}{1}
+\setcounter{lotdepth}{1}
+\setcounter{NAT@ctr}{0}
+\setcounter{parentequation}{0}
+\setcounter{ALC@unique}{0}
+\setcounter{ALC@line}{0}
+\setcounter{ALC@rem}{0}
+\setcounter{ALC@depth}{0}
+\setcounter{float@type}{8}
+\setcounter{algorithm}{0}
+\setcounter{KVtest}{0}
+\setcounter{subfigure}{0}
+\setcounter{subfigure@save}{2}
+\setcounter{subtable}{0}
+\setcounter{subtable@save}{2}
+\setcounter{tkzb@ca}{0}
+\setcounter{tkzb@cb}{0}
+\setcounter{tkzb@cc}{0}
+\setcounter{tkzb@v}{0}
+\setcounter{tkzb@cd}{0}
+\setcounter{tkzb@ce}{0}
+\setcounter{tkzb@cf}{0}
+\setcounter{tkzb@temp}{0}
+\setcounter{tkzb@int}{0}
+\setcounter{tkzb@next}{0}
+\setcounter{tkzb@ta}{5}
+\setcounter{tkzb@tb}{0}
+\setcounter{theorem}{2}
+}

@@ -1,0 +1,1201 @@
+@rfc{RFC3272,
+ author = {Awduche, D. and Chiu, A. and Elwalid, A. and Widjaja, I. and Xiao, X.},
+ title = {Overview and Principles of Internet Traffic Engineering},
+ year = {2002},
+ publisher = {RFC Editor},
+ address = {United States},
+ }
+
+@INPROCEEDINGS{TraffEngMinDelay,
+author={Vutukury, S. and Garcia-Luna-Aceves, J.J.},
+journal={Computer Communications and Networks, 2000. Proceedings. Ninth International Conference on}, title={A traffic engineering approach based on minimum-delay routing},
+year={2000},
+month={},
+volume={},
+number={},
+pages={42 -47},
+keywords={differentiated services;interior gateway protocols;minimum-delay routing;scalable packet forwarding;traffic engineering;traffic matrix;delays;internetworking;minimisation;protocols;quality of service;telecommunication network routing;telecommunication traffic;},
+doi={10.1109/ICCCN.2000.885468},
+ISSN={},}
+
+@inproceedings{TrafficEngOSPFWeights,
+  author    = {Bernard Fortz and
+               Mikkel Thorup},
+  title     = {Internet Traffic Engineering by Optimizing OSPF Weights},
+  booktitle = {INFOCOM},
+  year      = {2000},
+  pages     = {519-528},
+  ee        = {http://www.ieee-infocom.org/2000/papers/165.ps},
+  bibsource = {DBLP, http://dblp.uni-trier.de}
+}
+
+@inproceedings{WANG01,
+  author    = {Yufei Wang and
+               Zheng Wang and
+               Leah Zhang},
+  title     = {Internet Traffic Engineering without Full Mesh Overlaying},
+  booktitle = {INFOCOM},
+  year      = {2001},
+  pages     = {565-571},
+  ee        = {http://www.ieee-infocom.org/2001/paper/744.pdf},
+  bibsource = {DBLP, http://dblp.uni-trier.de}
+}
+
+
+
+
+@ARTICLE{RUD80, 
+title={Dynamic Routing and Flow Control}, 
+author={ Rudin, H. and Mueller, H.}, 
+journal={Communications, IEEE Transactions on}, 
+year={1980}, 
+month={Jul}, 
+volume={28}, 
+number={7}, 
+pages={ 1030-1039}, 
+keywords={null Packet switching}, 
+doi={}, 
+ISSN={0090-6778}, }
+
+@inproceedings{GAP,
+ author = {Stadler, Rolf and Dam, Mads and Gonzalez, Alberto and Wuhib, Fetahi},
+ title = {Decentralized real-time monitoring of network-wide aggregates},
+ booktitle = {LADIS '08: Proceedings of the 2nd Workshop on Large-Scale Distributed Systems and Middleware},
+ year = {2008},
+ isbn = {978-1-60558-296-2},
+ pages = {1-6},
+ location = {Yorktown Heights, New York},
+ doi = {http://doi.acm.org/10.1145/1529974.1529984},
+ publisher = {ACM},
+ address = {New York, NY, USA},
+ }
+
+@inproceedings{REM,
+ author = {Athuraliya, Sanjeewa and Low, Steven H. and Lapsley, David E.},
+ title = {Random Early Marking},
+ booktitle = {QofIS '00: Proceedings of the First COST 263 International Workshop on Quality of Future Internet Services},
+ year = {2000},
+ isbn = {3-540-41076-7},
+ pages = {43--54},
+ publisher = {Springer-Verlag},
+ address = {London, UK},
+ }
+
+@rfc{OSPF,
+ author = {Moy, J.},
+ title = {OSPF Version 2},
+ year = {1998},
+ publisher = {RFC Editor},
+ address = {United States},
+ }
+
+@Misc{RIP,
+  author =       "C. L. Hedrick",
+  title =        "{RFC 1058}: Routing Information Protocol",
+  day =          "1",
+  month =        jun,
+  year =         "1988",
+  bibdate =      "Thu Oct 16 09:34:09 MDT 1997",
+  acknowledgement = ack-nhfb,
+  format =       "TXT=93285 bytes",
+  online =       "yes",
+  status =       "HISTORIC",
+  updatedby =    "Updated by RFC1388, RFC1723 \cite{RFC1388,RFC1723}.",
+}
+
+@INPROCEEDINGS{EIGP,
+    author = {Bob Albrightson and Joanne Boyle},
+    title = {EIGRP-A Fast Routing Protocol Based on Distance Vectors},
+    booktitle = {Proc. Networld/Interop 94},
+    year = {1994}
+}
+
+@inproceedings{LLIP,
+ author = {Shaikh, Anees and Rexford, Jennifer and Shin, Kang G.},
+ title = {Load-sensitive routing of long-lived IP flows},
+ booktitle = {SIGCOMM '99: Proceedings of the conference on Applications, technologies, architectures, and protocols for computer communication},
+ year = {1999},
+ isbn = {1-58113-135-6},
+ pages = {215--226},
+ location = {Cambridge, Massachusetts, United States},
+ doi = {http://doi.acm.org/10.1145/316188.316225},
+ publisher = {ACM},
+ address = {New York, NY, USA},
+ }
+
+@article{BAHK,
+ author = {Bahk, Saewoong and El Zarki, Magda},
+ title = {Dynamic multi-path routing and how it compares with other dynamic routing algorithms for high speed wide area network},
+ journal = {SIGCOMM Comput. Commun. Rev.},
+ volume = {22},
+ number = {4},
+ year = {1992},
+ issn = {0146-4833},
+ pages = {53--64},
+ doi = {http://doi.acm.org/10.1145/144191.144205},
+ publisher = {ACM},
+ address = {New York, NY, USA},
+ }
+
+@inproceedings{LEE,
+ author = {Lee, Youngseok and Choi, Yanghee},
+ title = {An Adaptive Flow-Level Load Control Scheme for Multipath Forwarding},
+ booktitle = {ICN '01: Proceedings of the First International Conference on Networking-Part 1},
+ year = {2001},
+ isbn = {3-540-42302-8},
+ pages = {771--779},
+ publisher = {Springer-Verlag},
+ address = {London, UK},
+ }
+
+
+@inproceedings{QOSM,
+  author    = {Nageswara S. V. Rao and
+               Stephen Gordon Batsell},
+  title     = {QoS Routing Via Multiple Paths Using Bandwidth Reservation},
+  booktitle = {INFOCOM},
+  year      = {1998},
+  pages     = {11-18},
+  bibsource = {DBLP, http://dblp.uni-trier.de}
+}
+
+@article{DIJK,
+   author = "Edsger. W. Dijkstra",
+   title = "A note on two problems in connexion with graphs.",
+   year = "1959",
+   journal = "Numerische Mathematik",
+   volume = 1,
+   pages = {269--271},
+   url = "http://gdzdoc.sub.uni-goettingen.de/sub/digbib/loader?did=D196313",
+}
+
+@ARTICLE{AAP, 
+title={A-GAP: An Adaptive Protocol for Continuous Network Monitoring with Accuracy Objectives}, 
+author={Prieto, A.G. and Stadler, R.}, 
+journal={Network and Service Management, IEEE Transactions on}, 
+year={2007}, 
+month={June }, 
+volume={4}, 
+number={1}, 
+pages={2-12}, 
+keywords={error statistics, estimation theory, protocols, stochastic processes, telecommunication network management, telecommunication network reliability, trees (mathematics)adaptive protocol, aggregation function, average estimation error, continuous network monitoring, device counter, estimation error distribution, incremental aggregation, node failure, spanning tree, stochastic model}, 
+doi={10.1109/TNSM.2007.030101}, 
+ISSN={1932-4537}, }
+
+@rfc{RFC2991,
+ author = {Thaler, D. and Hopps, C.},
+ title = {Multipath Issues in Unicast and Multicast Next-Hop Selection},
+ year = {2000},
+ publisher = {RFC Editor},
+ address = {United States},
+}
+
+@INPROCEEDINGS{sFLOW, 
+title={sFlow: towards resource-efficient and agile service federation in service overlay networks}, 
+author={Wang, M. and Li, B. and Li, Z.}, 
+booktitle={Distributed Computing Systems, 2004. Proceedings. 24th International Conference on}, 
+year={2004}, 
+month={}, 
+volume={}, 
+number={}, 
+pages={ 628-635}, 
+keywords={ distributed algorithms, flow graphs, quality of service, telecommunication networks agile service federation, directed acyclic graph, distributed algorithm, federated service flow graph, sFlow, service overlay network}, 
+doi={10.1109/ICDCS.2004.1281630}, 
+ISSN={1063-6927 }, }
+
+@rfc{SNMP,
+ author = {Case, J. D. and Fedor, M. and Schoffstall, M. L. and Davin, J.},
+ title = {Simple Network Management Protocol (SNMP)},
+ year = {1990},
+ publisher = {RFC Editor},
+ address = {United States},
+ }
+
+@article{OPFW,
+ author = {McKeown, Nick and Anderson, Tom and Balakrishnan, Hari and Parulkar, Guru and Peterson, Larry and Rexford, Jennifer and Shenker, Scott and Turner, Jonathan},
+ title = {OpenFlow: enabling innovation in campus networks},
+ journal = {SIGCOMM Comput. Commun. Rev.},
+ volume = {38},
+ number = {2},
+ year = {2008},
+ issn = {0146-4833},
+ pages = {69--74},
+ doi = {http://doi.acm.org/10.1145/1355734.1355746},
+ publisher = {ACM},
+ address = {New York, NY, USA},
+ }
+
+@article{NOX,
+  author    = {Natasha Gude and
+               Teemu Koponen and
+               Justin Pettit and
+               Ben Pfaff and
+               Martin Casado and
+               Nick McKeown and
+               Scott Shenker},
+  title     = {NOX: towards an operating system for networks},
+  journal   = {Computer Communication Review},
+  volume    = {38},
+  number    = {3},
+  year      = {2008},
+  pages     = {105-110},
+  ee        = {http://doi.acm.org/10.1145/1384609.1384625},
+  bibsource = {DBLP, http://dblp.uni-trier.de}
+}
+
+@book{Tanenbaum,
+        title = {Computer Networks},
+        address = {Upper Saddle River, NJ},
+        author = {Andrew S. Tanenbaum},
+        edition = {4.},
+        publisher = {Pearson},
+        year = 2003,
+        abstract = {In this highly anticipated revision, Tanenbaum takes a structured
+	approach to explaining how networks work from the inside out. He
+	starts with an explanation of the physical layer of networking, computer
+	hardware and transmission systems; then works his way up to network
+	applications. Tanenbaum's in-depth application coverage includes
+	email; the domain name system; the World Wide Web (both client- and
+	server-side); and multimedia (including voice over IP, Internet radio
+	video on demand, video conferencing, and streaming media. Each chapter
+	follows a consistent approach: Tanenbaum presents key principles,
+	then illustrates them utilizing real-world example networks that
+	run through the entire book—the Internet, and wireless networks,
+	including Wireless LANs, broadband wireless and Bluetooth. This new
+	Fourth Edition contains a new chapter devoted exclusively to network
+	security. The textbook is supplemented by a Solutions Manual, as
+	well as a Website containing PowerPoint slides, art in various forms,
+	and other tools for instruction, including a protocol simulator whereby
+	students can develop and test their own network protocols.},
+	biburl = {http://www.bibsonomy.org/bibtex/259576ce5dc07f270a4cb4d6657ee10dc/flint63},
+	keywords = {book computer network v1001},
+    timestamp = {2009.11.29}, file = {Pearson Product page:http\://www.pearsoned.co.uk/bookshop/detail.asp?item=250467:URL;Amazon Search inside:http\://www.amazon.de/gp/reader/0130384887/:URL;GoogleBooks:http\://books.google.de/books?isbn=978-0-13-038488-1:URL}, isbn = {978-0-13-038488-1}, owner = {flint}
+}
+
+@article{CerfKahn,
+ author = {Cerf, Vinton G. and Icahn, Robert E.},
+ title = {A protocol for packet network intercommunication},
+ journal = {SIGCOMM Comput. Commun. Rev.},
+ volume = {35},
+ number = {2},
+ year = {2005},
+ issn = {0146-4833},
+ pages = {71--82},
+ doi = {http://doi.acm.org/10.1145/1064413.1064423},
+ publisher = {ACM},
+ address = {New York, NY, USA},
+ }
+
+@inproceedings{aloha,
+ author = {Abramson, Norman},
+ title = {THE ALOHA SYSTEM: another alternative for computer communications},
+ booktitle = {AFIPS '70 (Fall): Proceedings of the November 17-19, 1970, fall joint computer conference},
+ year = {1970},
+ pages = {281--285},
+ location = {Houston, Texas},
+ doi = {http://doi.acm.org/10.1145/1478462.1478502},
+ publisher = {ACM},
+ address = {New York, NY, USA},
+ }
+
+@inproceedings{EtherCapa,
+ author = {Boggs, D. R. and Mogul, J. C. and Kent, C. A.},
+ title = {Measured capacity of an Ethernet: myths and reality},
+ booktitle = {SIGCOMM '88: Symposium proceedings on Communications architectures and protocols},
+ year = {1988},
+ isbn = {0-89791-279-9},
+ pages = {222--234},
+ location = {Stanford, California, United States},
+ doi = {http://doi.acm.org/10.1145/52324.52347},
+ publisher = {ACM},
+ address = {New York, NY, USA},
+ }
+
+@book{EtherGuide,
+ author = {Spurgeon, Charles E.},
+ title = {Ethernet: the definitive guide},
+ year = {2000},
+ isbn = {1-56592-660-9},
+ publisher = {O'Reilly \& Associates, Inc.},
+ address = {Sebastopol, CA, USA},
+ }
+
+@ARTICLE{IEEE802.3, 
+author={}, 
+journal={ANSI/IEEE Std 802.3-1985}, title={IEEE Standards for Local Area Networks: Carrier Sense Multiple Access With Collision Detection (CSMA/CD) Access Method and Physical Layer Specifications}, 
+year={1985}, 
+month={ }, 
+volume={}, 
+number={}, 
+pages={}, 
+keywords={10 Mb/s baseband;CSMA/CD;IEEE Std 802.3-1985;ISO Model;MAC;OSI;Open System Interconnection;carrier sense multiple access with collision;clarity;common bus transmission medium;flexibility;logical divisions;media access method;local area networks;multi-access systems;standards;telecommunication networks;}, 
+doi={10.1109/IEEESTD.1985.82837}, 
+ISSN={}
+}
+
+@ARTICLE{IEEE802.1D, 
+author={}, 
+journal={IEEE Std 802.1D-1990}, title={IEEE Standards for Local and Metropolitan Area Networks: Media Access Control (MAC) Bridges}, 
+year={1991}, 
+month={ }, 
+volume={}, 
+number={}, 
+pages={1}, 
+keywords={IEEE 802 local area networks;IEEE standard;LAN interconnection;MAC;MAN;architecture;loop-free topology;management;media access control bridges;metropolitan area networks;operation;protocol;redundancy;spanning tree algorithm;computer networks;local area networks;protocols;standards;}, 
+doi={10.1109/IEEESTD.1991.101050}, 
+ISSN={}
+}
+
+
+@misc{RFC793,
+ author		 = {Postel, Jon},
+ title		 = {RFC 793},
+ month		 = sep,
+ number		 = {793},
+ title		 = {Transmission Control Protocol},
+ howpublished	 = {http://www.ietf.org/rfc/rfc793.txt},
+ year		 = {1981}
+}
+
+
+@Book{IEEE802.3i,
+  author =       "IEEE",
+  title =        "802.3i-1990 {IEEE} Supplement to Carrier Sense
+                 Multiple Access with Collision Detection {CSMA\slash
+                 CD} Access Method and Physical Layer Specifications:
+                 System Considerations for Multisegment 10 Mb/s Baseband
+                 Networks (Section 13) and Twisted-Pair Medium
+                 Attachment Unit ({MAU}) and Baseband Medium, Type
+                 10{BASE-T} (Section 14)",
+  publisher =    pub-IEEE,
+  address =      pub-IEEE:adr,
+  year =         "1990",
+  ISBN =         "1-55937-070-X",
+  ISBN-13 =      "978-1-55937-070-7",
+  bibdate =      "Tue Nov 05 10:10:01 2002",
+  note =         "IEEE product number SH13763.",
+  price =        "US\$26.00",
+  acknowledgement = ack-cs,
+}
+
+@ARTICLE{IEEE802.3u, 
+author={}, 
+journal={IEEE Std 802.3u-1995 (Supplement to ISO/IEC 8802-3: 1993; ANSI/IEEE Std 802.3, 1993 Edition)}, title={IEEE Standards for Local and Metropolitan Area Networks: Supplement to Carrier Sense Multiple Access with Collision Detection (CSMA/CD) Access Method and Physical Layer Specifications Media Access Control (MAC) Parameters, Physical Layer, Medium Attachment Units, and Repeater for 100 Mb/s Operation, Type 100BASE-T (Clauses 21-30)}, 
+year={1995}, 
+month={}, 
+volume={}, 
+number={}, 
+pages={ 0 - 398}, 
+keywords={}, 
+doi={}, 
+ISSN={ },}
+
+@ARTICLE{IEEE802.3j, 
+author={}, 
+journal={ANSI/IEEE Std 802.3j-1993}, title={IEEE Standards for Local and Metropolitan Area Networks: Supplement to Carrier Sense Multiple Access with Collision Detection (CSWCD) Access Method and Physical Layer Specifications Fiber Optic Active and Passive Star-Based Segments, Type 10BASE-F (Sections 15-18)}, 
+year={1993}, 
+month={ }, 
+volume={}, 
+number={}, 
+pages={1}, 
+keywords={}, 
+doi={10.1109/IEEESTD.1993.119667}, 
+ISSN={},}
+
+@ARTICLE{IEEE802.3z, 
+author={Frazier, H.}, 
+journal={Network, IEEE}, title={The 802.3z Gigabit Ethernet Standard}, 
+year={1998}, 
+month={may/jun}, 
+volume={12}, 
+number={3}, 
+pages={6 -7}, 
+keywords={1000 Mbit/s;Gigabit Ethernet Standard;IEEE 802.3 CSMA/CD Working Group;IEEE 802.3z Gigabit Ethernet Task Force;IEEE Standards Board;IEEE Std 802.3z-1998;backbone;backward compatibility;high-performance switches;interconnection;local area network;operating speed;routers;servers;standards development;IEEE standards;carrier sense multiple access;local area networks;telecommunication standards;}, 
+doi={10.1109/65.690946}, 
+ISSN={0890-8044},}
+
+@ARTICLE{IEEE802.5, 
+author={}, 
+journal={IEEE Std 802.5-1989}, title={IEEE Standards for Local Area Networks: Token Ring Access Method and Physical Layer Specifications}, 
+year={1989}, 
+month={ }, 
+volume={}, 
+number={}, 
+pages={}, 
+keywords={16 Mbit/s;4 Mbit/s;IEEE standards;LAN;MAC frames;MAC protocol;compatible interconnection;data processing equipment;frame format;homogeneous externally visible characteristics;local area networks;logical link control sublayer;medium access control;medium interface connector;physical layer functions;priority stacks;services;shielded twisted pair attachment;station management;timers;token-passing ring access method;protocols;standards;token networks;}, 
+doi={10.1109/IEEESTD.1989.108547}, 
+ISSN={},}
+
+
+@article{WARSHALL1962,
+ author = {Floyd, Robert W.},
+ title = {Algorithm 97: Shortest path},
+ journal = {Commun. ACM},
+ volume = {5},
+ number = {6},
+ year = {1962},
+ issn = {0001-0782},
+ pages = {345},
+ doi = {http://doi.acm.org/10.1145/367766.368168},
+ publisher = {ACM},
+ address = {New York, NY, USA},
+ }
+
+@ARTICLE{Bellman1958,
+   AUTHOR = {Richard Bellman},
+   TITLE = {On a Routing Problem},
+   JOURNAL = {Quarterly of Applied Mathematics},
+   VOLUME = {16},
+   NUMBER = {1},
+   YEAR = {1958},
+   PAGES = {87-90},
+   URL = {http://wisl.ece.cornell.edu/ECE794/Jan29/bellman1958.pdf},
+}
+
+@TECHREPORT{Ford1956,
+   TITLE = {Network Flow Theory},
+   AUTHOR = {L.R. Ford Jr.},
+   INSTITUTION = {The RAND Corperation, Santa Moncia, California},
+   NUMBER = {P-923},
+   MONTH = {August},
+   TYPE = {Paper},
+   YEAR = {1956},
+   URL = {http://www.rand.org/cgi-bin/Abstracts/ordi/getabbydoc.pl?doc=P-923}
+}
+
+
+@inproceedings{ARPAORIG,
+ author = {McQuillan, John M. and D.C. Walden},
+ title = {The ARPANET Design Decisions,},
+ booktitle = {Computer Networksi Vol. 1, No.5,},
+ year = {1977},
+ pages = {},
+ location = {},
+ }
+
+@article{ARPANET,
+ author = {Khanna, A. and Zinky, J.},
+ title = {The revised ARPANET routing metric},
+ journal = {SIGCOMM Comput. Commun. Rev.},
+ volume = {19},
+ number = {4},
+ year = {1989},
+ issn = {0146-4833},
+ pages = {45--56},
+ doi = {http://doi.acm.org/10.1145/75247.75252},
+ publisher = {ACM},
+ address = {New York, NY, USA},
+ }
+"The ARPANET Design Decisions," J.M. McQuillan and D.C. Walden, Computer Networks, Vol.1, No.5, August 1977. 
+
+
+@inproceedings{ARPAROUTE,
+ author = {McQuillan, John M. and Richer, Ira and Rosen, Eric C.},
+ title = {An overview of the new routing algorithm for the ARPANET},
+ booktitle = {SIGCOMM '79: Proceedings of the sixth symposium on Data communications},
+ year = {1979},
+ pages = {63--68},
+ location = {Pacific Grove, California, United States},
+ doi = {http://doi.acm.org/10.1145/800092.802981},
+ publisher = {ACM},
+ address = {New York, NY, USA},
+ }
+
+@Book{DataNetworks,
+	author = "Dimitri Bertsekas and Robert Gallager",
+	citeulike-article-id = "4083046",
+	edition = "Second",
+	keywords = "book",
+	posted-at = "2009-02-23 06:09:53",
+	priority = "0",
+	publisher = "Prentice Hall",
+	title = "Data Networks",
+	year = "1992"
+}
+
+@ARTICLE{Cegrell75,
+author={ Cegrell, T.},
+journal={Communications, IEEE Transactions on}, title={A Routing Procedure for the TIDAS Message-Switching Network},
+year={1975},
+month={jun},
+volume={23},
+number={6},
+pages={ 575 - 585},
+keywords={ Computer communications; Message switching;},
+doi={},
+ISSN={0090-6778},}
+
+@article{DUAL,
+ author = {Garcia-Lunes-Aceves, J. J.},
+ title = {Loop-free routing using diffusing computations},
+ journal = {IEEE/ACM Trans. Netw.},
+ volume = {1},
+ number = {1},
+ year = {1993},
+ issn = {1063-6692},
+ pages = {130--141},
+ doi = {http://dx.doi.org/10.1109/90.222913},
+ publisher = {IEEE Press},
+ address = {Piscataway, NJ, USA},
+ }
+
+
+@article{LPA,
+ author = {Garcia-Luna-Aceves, J. J. and Murthy, Shree},
+ title = {A path-finding algorithm for loop-free routing},
+ journal = {IEEE/ACM Trans. Netw.},
+ volume = {5},
+ number = {1},
+ year = {1997},
+ issn = {1063-6692},
+ pages = {148--160},
+ doi = {http://dx.doi.org/10.1109/90.554729},
+ publisher = {IEEE Press},
+ address = {Piscataway, NJ, USA},
+ }
+
+@INPROCEEDINGS{EDVA,
+    author = {Zhengyu Xu and Sa Dai and J. J. Garcia-luna-aceves},
+    title = {A More Efficient Distance Vector Routing Algorithm},
+    booktitle = {in Proceedings of IEEE MILCOM},
+    year = {1997},
+    pages = {97}
+}
+
+@INPROCEEDINGS{MPA,
+    author = {P. Narvaez and K.-Y. Siu and H.-Y Tzeng},
+    title = {Efficient Algorithms for Multi-Path Link-State Routing},
+    year = {1999},
+    booktitle = {in Proceedings of ISCOM}
+}
+
+@article{SPFEE,
+ author = {Wang, Z. and Crowcroft, J.},
+ title = {Shortest path first with emergency exits},
+ journal = {SIGCOMM Comput. Commun. Rev.},
+ volume = {20},
+ number = {4},
+ year = {1990},
+ issn = {0146-4833},
+ pages = {166--176},
+ doi = {http://doi.acm.org/10.1145/99517.99548},
+ publisher = {ACM},
+ address = {New York, NY, USA},
+ }
+
+@INPROCEEDINGS{AMP,
+author={Gojmerac, I. and Ziegler, T. and Ricciato, F. and Reichl, P.},
+journal={Global Telecommunications Conference, 2003. GLOBECOM '03. IEEE}, title={Adaptive multipath routing for dynamic traffic engineering},
+year={2003},
+month={dec.},
+volume={6},
+number={},
+pages={ 3058 - 3062 vol.6},
+keywords={ Internet routing; adaptive multipath routing; autonomous systems; dynamic traffic engineering; memory consumption; ns-2 simulator; packet switching network; performance gains; signaling overhead; Internet; telecommunication network routing; telecommunication signalling; telecommunication traffic;},
+doi={10.1109/GLOCOM.2003.1258797},
+ISSN={},}
+
+
+@INPROCEEDINGS{DASM,
+author={Zaumen, W.T. and Garcia-Luna-Aceves, J.J.},
+journal={INFOCOM '98. Seventeenth Annual Joint Conference of the IEEE Computer and Communications Societies. Proceedings. IEEE}, title={Loop-free multipath routing using generalized diffusing computations},
+year={1998},
+month={mar-2 apr},
+volume={3},
+number={},
+pages={1408 -1417 vol.3},
+keywords={DASM;Internet;average performance;computer network;diffusing algorithm for shortest multipath;diffusing update algorithm;directed acyclic graph;distributed algorithm;dynamic computation;generalized diffusing computations;ideal link-state algorithm;instantaneous loop freedom;loop-free multipath routing;multiple loop-free paths;routing protocols;routing tables;simulation;computer networks;directed graphs;distributed algorithms;protocols;telecommunication network routing;},
+doi={10.1109/INFCOM.1998.662958},
+ISSN={0743-166X},}
+
+@INPROCEEDINGS{MPATH1,
+author={Vutukury, S. and Garcia-Luna-Aceves, J.J.},
+journal={Computer Communications and Networks, 1999. Proceedings. Eight International Conference on}, title={An algorithm for multipath computation using distance-vectors with predecessor information},
+year={1999},
+month={},
+volume={},
+number={},
+pages={534 -539},
+keywords={IP Internet;complexity;computer network;congestion;distance vectors;distributed routing algorithm;liveness;loop-free path;multipath computation;multiple paths;network performance;one-hop synchronization;predecessor information;safety;source-destination pair;traffic bursts;Internet;computational complexity;distributed algorithms;performance evaluation;synchronisation;telecommunication congestion control;telecommunication network routing;telecommunication traffic;},
+doi={10.1109/ICCCN.1999.805570},
+ISSN={},}
+
+@INPROCEEDINGS{MPATH2,
+author={Vutukury, S. and Garcia-Luna-Aceves, J.J.},
+journal={Global Telecommunications Conference, 1999. GLOBECOM '99}, title={A distributed algorithm for multipath computation},
+year={1999},
+month={},
+volume={3},
+number={},
+pages={1689 -1693 vol.3},
+keywords={Internet routing protocols;MPATH routing algorithm;computer network;distributed algorithm;fast responsive routing protocol;loop-free routing;multipath computation;multipath routing algorithm;near-optimal delays;single-path routing algorithms;source-destination pair;temporary traffic bursts;Internet;distributed algorithms;protocols;telecommunication network routing;telecommunication traffic;},
+doi={10.1109/GLOCOM.1999.832451},
+ISSN={},}
+
+@INPROCEEDINGS{MDVA,
+author={Vutukury, S. and Garcia-Luna-Aceves, J.J.},
+journal={INFOCOM 2001. Twentieth Annual Joint Conference of the IEEE Computer and Communications Societies. Proceedings. IEEE}, title={MDVA: a distance-vector multipath routing protocol},
+year={2001},
+month={},
+volume={1},
+number={},
+pages={557 -564 vol.1},
+keywords={MDVA;computer network;count-to-infinity problem;delay minimisation;directed acyclic graph;distance-vector multipath routing protocol;distributed Bellman-Ford algorithm;link costs;link failures;loop-free invariants;network partition;performance analysis;single-path routing algorithms;traffic load-balancing;computer network reliability;delays;directed graphs;performance evaluation;protocols;telecommunication network routing;telecommunication traffic;},
+doi={10.1109/INFCOM.2001.916780},
+ISSN={},}
+
+@inproceedings{MPDA,
+ author = {Vutukury, Srinivas and Garcia-Luna-Aceves, J. J.},
+ title = {A simple approximation to minimum-delay routing},
+ booktitle = {SIGCOMM '99: Proceedings of the conference on Applications, technologies, architectures, and protocols for computer communication},
+ year = {1999},
+ isbn = {1-58113-135-6},
+ pages = {227--238},
+ location = {Cambridge, Massachusetts, United States},
+ doi = {http://doi.acm.org/10.1145/316188.316227},
+ publisher = {ACM},
+ address = {New York, NY, USA},
+ }
+
+%The problem of finding optimal routes in a packet-switched computer network can be formulated as a nonlinear multicommodity flow problem.
+@article{CANTOR74,
+        author = {D.G. Cantor and M. Gerla},
+        title = {Optimal Routing in a Packet-Switched Computer Network},
+        journal ={IEEE Transactions on Computers},
+        volume = {23},
+        issn = {0018-9340},
+        year = {1974},
+	pages = {1062-1069},
+        doi = {http://doi.ieeecomputersociety.org/10.1109/T-C.1974.223806},
+        publisher = {IEEE Computer Society},
+        address = {Los Alamitos, CA, USA},
+}
+
+@INPROCEEDINGS{NearOPT,
+author={Garcia-Luna-Aceves, J.J. and Vutukury, S. and Zaumen, W.T.},
+journal={Communications, 1999. ICC '99. 1999 IEEE International Conference on}, title={A practical approach to minimizing delays in Internet routing},
+year={1999},
+month={},
+volume={1},
+number={},
+pages={479 -483 vol.1},
+keywords={Cisco EIGRP;Gallager's minimum-delay routing algorithm;Internet routing;Internet traffic traces;NEAR-OPT protocol;delay minimisation;destination-oriented flow allocation;dynamic networks;fractal traffic;long-term delay measures;loop-free distance-vector protocol;lower bounds;multiple loop-free paths;performance;short-term delay measures;single-path routing;static networks;traffic source models;Internet;delays;telecommunication network routing;telecommunication traffic;transport protocols;},
+doi={10.1109/ICC.1999.767986},
+ISSN={},}
+
+
+@Article{Gallager-mindelay,
+	abstract = "An algorithm is defined for establishing routing tables in the individual nodes of a data network. The routing table at a node<tex>i</tex>specifies, for each other node<tex>j</tex>, what fraction of the traffic destined for node<tex>j</tex>should leave node<tex>i</tex>on each of the links emanating from node<tex>i</tex>. The algorithm is applied independently at each node and successively updates the routing table at that node based on information communicated between adjacent nodes about the marginal delay to each destination. For stationary input traffic statistics, the average delay per message through the network converges, with successive updates of the routing tables, to the minimum average delay over all routing assignments. The algorithm has the additional property that the traffic to each destination is guaranteed to be loop free at each iteration of the algorithm. In addition, a new global convergence theorem for noncontinuous iteration algorithms is developed.",
+	author = "R. Gallager",
+	citeulike-article-id = "760348",
+	citeulike-linkout-0 = "http://ieeexplore.ieee.org/xpls/abs\_all.jsp?arnumber=1093711",
+	journal = "IEEE Transactions on Communications",
+	keywords = "delay, minimum",
+	number = "1",
+	pages = "73--85",
+	posted-at = "2006-07-15 21:42:48",
+	priority = "2",
+	title = "A Minimum Delay Routing Algorithm Using Distributed Computation",
+	url = "http://ieeexplore.ieee.org/xpls/abs\_all.jsp?arnumber=1093711",
+	volume = "25",
+	year = "1977"
+}
+
+@ARTICLE{Segall-Model,
+author={ Segall, A.},
+journal={Communications, IEEE Transactions on}, title={The Modeling of Adaptive Routing in Data-Communication Networks},
+year={1977},
+month={jan},
+volume={25},
+number={1},
+pages={ 85 - 95},
+keywords={ Store-and-forward networks;},
+doi={},
+ISSN={0090-6778},}
+
+@ARTICLE{DijkstraTerm ,
+AUTHOR = "Edsger W. Dijkstra and Carel S. Scholten",
+TITLE = "Termination Detection for Diffusing Computations",
+JOURNAL = "Inf. Process. Lett.",
+PAGES = {1-4},
+YEAR = {1980}  }
+
+@INPROCEEDINGS{EIGRP,
+    author = {Bob Albrightson and J.J. Garcia-Luna-Aceves and Joanne Boyle},
+    title = {Eigrp - A Fast Routing Protocol Based On Distance Vectors},
+    booktitle = {Proc. Networld/Interop},
+    year = {1994}
+}
+
+@book{Huitema,
+ author = {Huitema, Christian},
+ title = {Routing in the Internet},
+ year = {1995},
+ isbn = {0-13-132192-7},
+ publisher = {Prentice-Hall, Inc.},
+ address = {Upper Saddle River, NJ, USA},
+ }
+
+
+@rfc{RFC3787,
+ editor = {Parker, J.},
+ title = {Recommendations for Interoperable IP Networks using Intermediate System to Intermediate System (IS-IS)},
+ year = {2004},
+ publisher = {RFC Editor},
+ address = {United States},
+ }
+
+@article{ParaQueue,
+ author = {Jean-Marie, Alain and G\"{u}n, Levent},
+ title = {Parallel queues with resequencing},
+ journal = {J. ACM},
+ volume = {40},
+ number = {5},
+ year = {1993},
+ issn = {0004-5411},
+ pages = {1188--1208},
+ doi = {http://doi.acm.org/10.1145/174147.169748},
+ publisher = {ACM},
+ address = {New York, NY, USA},
+ }
+
+@rfc{RFC2992,
+ author = {Hopps, C.},
+ title = {Analysis of an Equal-Cost Multi-Path Algorithm},
+ year = {2000},
+ publisher = {RFC Editor},
+ address = {United States},
+ }
+
+@inproceedings{DMPR,
+ author = {De, Swades and Das, Sajal K.},
+ title = {Dynamic Multipath Routing (DMPR): An Approach to Improve Resource Utilization in Networks for Real-Time Traffic},
+ booktitle = {MASCOTS '01: Proceedings of the Ninth International Symposium in Modeling, Analysis and Simulation of Computer and Telecommunication Systems},
+ year = {2001},
+ pages = {23},
+ publisher = {IEEE Computer Society},
+ address = {Washington, DC, USA},
+ }
+
+@INPROCEEDINGS{DEDAS, 
+author={De, S. and Das, S.K. and Tonguz, O.}, 
+booktitle={Communications, 2001. ICC 2001. IEEE International Conference on}, title={Dynamic multipath routing in networks and switches carrying connection-oriented traffic}, 
+year={2001}, 
+month={}, 
+volume={10}, 
+number={}, 
+pages={3130 -3134 vol.10}, 
+keywords={DMPR scheme;QoS;available alternate routes;circuit-switched networks;communication networks;communication switches;connection-oriented traffic;data networks;delay sensitive traffic;dynamic multipath routing;network latency;packet-switched networks;quality of service;resource utilization;virtual circuit-switched networks;circuit switching;packet switching;quality of service;telecommunication network routing;telecommunication traffic;}, 
+doi={10.1109/ICC.2001.937249}, 
+ISSN={},}
+
+@INPROCEEDINGS{DynMultConnOrient,
+author={De, S. and Das, S.K. and Tonguz, O.},
+journal={Communications, 2001. ICC 2001. IEEE International Conference on}, title={Dynamic multipath routing in networks and switches carrying connection-oriented traffic},
+year={2001},
+month={},
+volume={10},
+number={},
+pages={3130 -3134 vol.10},
+keywords={DMPR scheme;QoS;available alternate routes;circuit-switched networks;communication networks;communication switches;connection-oriented traffic;data networks;delay sensitive traffic;dynamic multipath routing;network latency;packet-switched networks;quality of service;resource utilization;virtual circuit-switched networks;circuit switching;packet switching;quality of service;telecommunication network routing;telecommunication traffic;},
+doi={10.1109/ICC.2001.937249},
+ISSN={},}
+
+@ARTICLE{Bertsekas82,
+author={ Bertsekas, D.},
+journal={Automatic Control, IEEE Transactions on}, title={Dynamic behavior of shortest path routing algorithms for communication networks},
+year={1982},
+month={feb},
+volume={27},
+number={1},
+pages={ 60 - 74},
+keywords={ Store-and-forward switching;},
+doi={},
+ISSN={0018-9286},}
+
+@ARTICLE{HRW,
+author={Thaler, D.G. and Ravishankar, C.V.},
+journal={Networking, IEEE/ACM Transactions on}, title={Using name-based mappings to increase hit rates},
+year={1998},
+month={feb},
+volume={6},
+number={1},
+pages={1 -14},
+keywords={CBTv2;CPU load;PIMv2;WWW;World Wide Web;availability;client sites;highest random weight mapping;hit rates;identical intermediate servers;least-loaded;multicast routing;multicast routing protocols;name-based mappings;object name;object-server mappings;probability;proxy servers;rendezvous points;rendezvous points/cores;request allocation schemes;requestable objects;round-robin;routers;service times;simulation results;client-server systems;protocols;random processes;telecommunication network routing;},
+doi={10.1109/90.663936},
+ISSN={1063-6692},}
+
+@inproceedings{andersen2003best-path,
+   author =       "David G. Andersen and Alex Snoeren and Hari Balakrishnan",
+   title =        "{Best-Path vs. Multi-Path Overlay Routing}",
+   booktitle =    {Internet Measurement Conference},
+   year =         {2003},
+   month =        {October},
+   address =      {Miami, FL}
+}
+
+@misc {TCP,
+   author = {M. Allman and V. Paxson and W. Stevens},
+    title = {{RFC} 2581: {TCP} Congestion Control},
+     year = {1999}    
+}  
+
+@rfc{RFC2474,
+ author = {Nichols, K. and Blake, S. and Baker, F. and Black, D.},
+ title = {Definition of the Differentiated Services Field (DS Field) in the IPv4 and IPv6 Headers},
+ year = {1998},
+ publisher = {RFC Editor},
+ address = {United States},
+}
+
+@Misc{RFC2370,
+	title = "{RFC 2370: The OSPF Opaque LSA Option}",
+	series = "Request for Comments",
+	author = "R. Coltun",
+	publisher = "IETF",
+	organization = "Internet Engineering Task Force",
+	number = "2370",
+	month = jul,
+	year = 1998,
+	note = "Obsoleted by RFC 5250, updated by RFC 3630",
+	howpublished = "http://www.ietf.org/rfc/rfc2370.txt"
+}
+
+@Misc{OMP,
+	title = "{OSPF Optimized Multipath}",
+        series = "Internet-Draft",
+        author = "Curtis Villamizar",
+        publisher = "IETF",
+        organization = "Internet Engineering Task Force",
+        number = "02",
+        month = feb,
+        year = 1999,
+        howpublished = "http://tools.ietf.org/html/draft-ietf-ospf-omp-02"
+}
+
+@book{CommNets,
+ author = {Kleinrock, Leonard},
+ title = {Communication nets; stochastic message flow and delay},
+ year = {1972},
+ isbn = {0486611051},
+ publisher = {Dover Publications, Incorporated},
+ }
+
+@BOOK{KLEVol2,
+ author = "L. Kleinrock",
+ title = "Queueing Systems, Volume 2: Computer Applications",
+ publisher = "Wiley",
+ year = "1976"
+}
+
+@BOOK{KLEVol1,
+ author = "L. Kleinrock",
+ title = "Queueing Systems, Volume 1: Theory",
+ publisher = "Wiley",
+ year = "1975"
+}
+
+@Book{Poisson,
+	title = "Poisson Processes (Oxford Studies in Probability)",
+	author = "J. F. C. Kingman",
+	howpublished = "Hardcover",
+	publisher = "Oxford University Press, USA",
+	month = "January",
+	year = "1993",
+	isbn = "0198536933",
+	abstract = "In the theory of random processes there are two that are fundamental, and occur over and over again, often in surprising ways. There is a real sense in which the deepest results are concerned with their interplay. One, the Bachelier Wiener model of Brownian motion, has been the subject of many books. The other, the Poisson process, seems at first sight humbler and less worthy of study in its own right. Nearly every book mentions it, but most hurry past to more general point processes or Markov chains. This comparative neglect is ill judged, and stems from a lack of perception of the real importance of the Poisson process. This distortion partly comes about from a restriction to one dimension, while the theory becomes more natural in more general context. This book attempts to redress the balance. It records Kingman's fascination with the beauty and wide applicability of Poisson processes in one or more dimensions. The mathematical theory is powerful, and a few key results often produce surprising consequences.",
+	keywords = "poisson",
+	url = "http://www.worldcat.org/isbn/0198536933",
+}
+
+@article{little,
+    abstract = {In a queuing process, let 1/» be the mean time between the arrivals of two consecutive units, L be the mean number of units in the system, and W be the mean time spent by a unit in the system. It is shown that, if the three means are finite and the corresponding stochastic processes strictly stationary, and, if the arrival process is metrically transitive with nonzero mean, then L=» W.},
+    author = {Little, John D. C.},
+    comment = {Proof of Little's Law, by Little},
+    issn = {0030364X},
+    journal = {Operations Research},
+    keywords = {queueing},
+    number = {3},
+    pages = {383--387},
+    publisher = {INFORMS},
+    title = {A Proof for the Queuing Formula: $L = \lambda W$},
+    url = {http://dx.doi.org/10.2307/167570},
+    volume = {9},
+    year = {1961}
+}
+
+
+@article{Erlang,
+    author = {A. K. Erlang},
+    title = {Solution of Some Problems in the Theory of Probabilities of Significance in Automatic Telephone Exchanges},
+    journal = {P.O.E.E Journal},
+    keywords = {queueing},
+    pages = {189},
+    volume = {10},
+    year = {1917}
+}
+
+@book{Selfish,
+ author = {Roughgarden, Tim},
+ title = {Selfish Routing and the Price of Anarchy},
+ year = {2005},
+ isbn = {0262182432},
+ publisher = {The MIT Press},
+ }
+
+@Book{Pigou,
+author = { Pigou, A. C. },
+title = { The economics of welfare},
+publisher = { Macmillan, London : },
+pages = { 1 v. },
+year = { 1920 },
+type = { Book },
+language = { English },
+subjects = { Welfare economics. },
+life-dates = { 1920 -  },
+catalogue-url = { http://nla.gov.au/nla.cat-vn1014245 },
+}
+
+@article{Burke,
+author = {Burke, Paul J.},
+title = {{The Output of a Queuing System}},
+journal = {OPERATIONS RESEARCH},
+volume = {4},
+number = {6},
+pages = {699-704},
+doi = {10.1287/opre.4.6.699},
+year = {1956},
+abstract = {For a queuing system with Poisson input, a single waiting line without defections, and identically distributed independent (negative) exponential service times, the equilibrium distribution of the number of service completions in an arbitrary time interval is shown to be the same as the input distribution, for any number of servers. This result has applications in problems of tandem queuing. The essence of the proof is the demonstration of the independence of an interdeparture interval and the state of the system at the end of the interval.
+},
+URL = {http://or.journal.informs.org/cgi/content/abstract/4/6/699},
+eprint = {http://or.journal.informs.org/cgi/reprint/4/6/699.pdf}
+}
+
+@misc{pat:IGRP,
+ title     = "Method and apparatus for routing communications among computer networks",
+ number    = "5088032",
+ author    = "Bosack, Leonard (Atherton, CA)",
+ year      = "1992",
+ month     = "February",
+ howpublished      = "http://www.freepatentsonline.com/5088032.html"
+}
+
+@rfc{RFC1264,
+	author = "R.M. Hinden",
+	title = "{Internet Engineering Task Force Internet Routing Protocol Standardization Criteria}",
+	series = "Request for Comments",
+	number = "1264",
+	howpublished = "RFC 1264 (Historic)",
+	publisher = "IETF",
+	organization = "Internet Engineering Task Force",
+	year = 1991,
+	month = oct,
+	note = "Obsoleted by RFC 4794",
+	url = "http://www.ietf.org/rfc/rfc1264.txt"
+}
+
+
+@misc{YaTG,
+author={Al-Shabibi, A. and Meirosu C. and Stancu S. and Tupurov A.},
+booktitle={CERN Technical Report, EDMS}, 
+title={YATG: Yet Another Traffic Grapher},
+year={2007},
+month={mar.},
+howpublished = "https://edms.cern.ch/document/839606/1",
+ISSN={},}
+
+@INPROCEEDINGS{MR,
+author={Al-Shabibi, A. and Martin, B.},
+booktitle={High Performance Switching and Routing (HPSR), 2010 International Conference on}, 
+title={MultiRoute - a congestion-aware multipath routing protocol},
+year={2010},
+month={jun.},
+volume={},
+number={},
+pages={88-93},
+keywords={ECMP;aggregation protocol;congestion aware multipath routing protocol;eventual next hop status;hash threshold variant;multiroute;path congestion;remote congestion information;router-router link;routing decision;scalable approach;shortest path;routing protocols;telecommunication congestion control;},
+doi={10.1109/HPSR.2010.5580280},
+ISSN={},}
+
+
+@inproceedings{SR,
+  author    = {Al-Shabibi, A. and Martin, B.},
+  title     = {StepRoute - A MultiRoute variant based on congestion intervals},
+  
+  crossref  = {DBLP:conf/icn/2011},
+}
+
+@proceedings{DBLP:conf/icn/2011,
+  booktitle     = {Tenth International Conference on Networking (ICN 2011),
+               23-28 January, 2011, The Netherlands Antilles},
+  publisher = {IEEE Computer Society},
+  year      = {2011},
+  bibsource = {DBLP, http://dblp.uni-trier.de}
+}
+
+
+
+@misc{GENI,
+ title     = "{Global Environment for Network Innovations.}",
+ howpublished = "http://www.freepatentsonline.com/5088032.html"
+}
+
+@misc{Python,
+ title     = "{The Python Programming Language.}",
+ howpublished = "http://www.python.org"
+}
+
+@misc{Emulab,
+ title     = "{EMULAB}",
+ howpublished       = "http://www.emulab.net"
+}
+
+@misc{StarBed,
+ title     = "{StarBed}",
+ howpublished       = "http://www.starbed.org"
+}
+
+@misc{NETFPGA,
+ title     = "{NetFPGA: Programmable Networking Hardware.}",
+ howpublished       = "http://www.netfpga.org"
+}
+
+@misc{Netboot,
+ title     = "{Netbooting a Linux workstation.}",
+  howpublished       = "{http://http://aput.net/\~jheiss/netboot\_linux/}"
+  }
+
+@article{XORP,
+ author = {Handley, Mark and Hodson, Orion and Kohler, Eddie},
+ title = {XORP: an open platform for network research},
+ journal = {SIGCOMM Comput. Commun. Rev.},
+ volume = {33},
+ number = {1},
+ year = {2003},
+ issn = {0146-4833},
+ pages = {53--57},
+ doi = {http://doi.acm.org/10.1145/774763.774771},
+ publisher = {ACM},
+ address = {New York, NY, USA},
+ }
+
+@article{CLICK,
+ author = {Morris, Robert and Kohler, Eddie and Jannotti, John and Kaashoek, M. Frans},
+ title = {The Click modular router},
+ journal = {SIGOPS Oper. Syst. Rev.},
+ volume = {33},
+ number = {5},
+ year = {1999},
+ issn = {0163-5980},
+ pages = {217--231},
+ doi = {http://doi.acm.org/10.1145/319344.319166},
+ publisher = {ACM},
+ address = {New York, NY, USA},
+ }
+
+@article{PlanetLab,
+ author = {Turner, Jonathan S. and Crowley, Patrick and DeHart, John and Freestone, Amy and Heller, Brandon and Kuhns, Fred and Kumar, Sailesh and Lockwood, John and Lu, Jing and Wilson, Michael and Wiseman, Charles and Zar, David},
+ title = {Supercharging planetlab: a high performance, multi-application, overlay network platform},
+ journal = {SIGCOMM Comput. Commun. Rev.},
+ volume = {37},
+ number = {4},
+ year = {2007},
+ issn = {0146-4833},
+ pages = {85--96},
+ doi = {http://doi.acm.org/10.1145/1282427.1282391},
+ publisher = {ACM},
+ address = {New York, NY, USA},
+ }
+
+
+@INPROCEEDINGS{GETB,
+author={Ciobotaru, M. and Stancu, S. and LeVine, M. and Martin, B.},
+journal={Real Time Conference, 2005. 14th IEEE-NPSS}, title={GETB, a gigabit Ethernet application platform: its use in the ATLAS TDAQ network},
+year={2005},
+month={jun.},
+volume={},
+number={},
+pages={6 pp.},
+keywords={ATLAS TDAQ network;Ethernet switch;GETB network tester;data transfer;gigabit Ethernet testbed;high-speed Ethernet network;network device performance assessment;read-out buffer emulator;trigger and data acquisition system;LAN interconnection;data acquisition;high energy physics instrumentation computing;local area networks;particle accelerators;particle detectors;},
+doi={10.1109/RTC.2005.1547453},
+ISSN={},}
+
+@article{BayesNetwork,
+ author = {Heckerman, David},
+ title = {Bayesian Networks for Data Mining},
+ journal = {Data Min. Knowl. Discov.},
+ volume = {1},
+ issue = {1},
+ month = {January},
+ year = {1997},
+ issn = {1384-5810},
+ pages = {79--119},
+ numpages = {41},
+ publisher = {Kluwer Academic Publishers},
+ address = {Hingham, MA, USA},
+}
+
+
+@INPROCEEDINGS{InfiniBand,
+    author = {InfiniBand Trade Association},
+    title = {InfiniBand Architecture Specification Volume 1, Release 1.2},
+}
+
+@incollection {IBAExtensions,
+   author = {Flich, J. and López, P. and Sancho, J. and Robles, A. and Duato, J.},
+   affiliation = {Universidad Politécnica de Valencia Department of Computer Engineering Spain},
+   title = {Improving InfiniBand Routing through Multiple Virtual Networks},
+   booktitle = {High Performance Computing},
+   series = {Lecture Notes in Computer Science},
+   editor = {Zima, Hans and Joe, Kazuki and Sato, Mitsuhisa and Seo, Yoshiki and Shimasaki, Masaaki},
+   publisher = {Springer Berlin / Heidelberg},
+   isbn = {},
+   pages = {363-368},
+   volume = {2327},
+   year = {2006}
+}
+
+@incollection {IBACurrentRoute,
+   author = {Gómez, M. and Flich, J. and Robles, A. and López, P. and Duato, J.},
+   affiliation = {Universidad Politécnica de Valencia Department of Computer Science P.O.B. 22012 46071 Valencia Spain},
+   title = {Evaluation of Routing Algorithms for InfiniBand Networks},
+   booktitle = {Euro-Par 2002 Parallel Processing},
+   series = {Lecture Notes in Computer Science},
+   editor = {Monien, Burkhard and Feldmann, Rainer},
+   publisher = {Springer Berlin / Heidelberg},
+   isbn = {},
+   pages = {159-162},
+   volume = {2400},
+   year = {2002}
+}
+
+@article{FragBad,
+ author = {Kent, Christopher A. and Mogul, Jeffrey C.},
+ title = {Fragmentation considered harmful},
+ journal = {SIGCOMM Comput. Commun. Rev.},
+ volume = {25},
+ issue = {1},
+ month = {January},
+ year = {1995},
+ issn = {0146-4833},
+ pages = {75--87},
+ numpages = {13},
+ url = {http://doi.acm.org/10.1145/205447.205456},
+ doi = {http://doi.acm.org/10.1145/205447.205456},
+ acmid = {205456},
+ publisher = {ACM},
+ address = {New York, NY, USA},
+}
+
+@rfc{RFC1812,
+ editor = {Baker, F.},
+ title = {Requirements for IP Version 4 Routers},
+ year = {1995}, publisher = {RFC Editor},
+ address = {United States},
+} 
+
+@Article{DiffServLimits,
+    author = {Yoram Bernet and Yoram Bernet Microsoft and S. Giordano},
+    title = {The Complementary Roles of RSVP and Differentiated Services in the Full-Service QoS Network},
+    year = {2000}
+}

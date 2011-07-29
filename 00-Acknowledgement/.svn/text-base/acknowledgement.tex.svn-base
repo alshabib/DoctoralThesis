@@ -1,0 +1,48 @@
+% preface.tex
+%
+
+\chapter{Acknowledgements}
+
+The road has been rather long --- not to mention somewhat winding.
+
+\medskip
+
+Over the past three years, it has been my good fortune to have and met many friends/people who saw past the whining and still decided to stick around and listen to me grovel about my thesis ad eternum. They have given me their time, companionship, professional and
+personal help, and above all: patience than was perhaps warranted by my
+seeming determination to indefinitely position the deadline for
+finishing this thesis at ``next year''.
+
+I would first like to thank my advisor, Volker Lindenstruth, who had the courage to take me on as a Ph.D student even though he did not yet know me very well. Even though, he has a busy schedule he still found time to listen to my problems and advise me appropriately. 
+
+Brian Martin was simply instrumental to the completion of this thesis. He, unfortunately for him, had to share an office with me. As if that isn't already torture enough, he graciously sacrificed himself to correcting, proof reading, and criticizing my articles and this thesis. His finely tuned BS-detector is about as sensitive as the ATLAS detector on the LHC and without it this thesis would have been full of it. I shall be eternally indebted to him.
+
+
+I would also like to thank my fellow researchers and colleagues. Catalin Meirosu's support and watchful eye as I was embarking on the implementation phase of this thesis. Stefan Stancu for his help in deploying my testbed.  Michael Levine's critical encouragements in moments of doubt.  
+%
+
+Rather than listing everyone, I wish to send out an aggregated thank you to all my family and friends without whom this thesis would have never been possible. Thank you all for the support and the availability to follow me into any random place I thought was ``cool''. I would also like to give a special shout out to the Bums, who have always been there for me whenever I needed them. I am truly honoured to call these people my friends.
+
+Even though all friends have been central in the achievement of this thesis. There is one that lies on the border between friend and family, Yai. I wish to thank you for encouraging me to start and accomplish my doctorate. Without your crucial encouragements, I doubt this would have been at all possible.
+
+\medskip
+%
+I am, of course, particularly indebted to my parents and my brother
+Ridha for their monumental, unwavering support and encouragement on all
+fronts. They have truly always been there for me, and without them none
+of this would have been even remotely possible.
+%
+\bigskip
+\medskip
+%
+
+%
+\begin{flushright}
+  \textit{Ali AL-SHABIBI\\
+     Geneva, December 2010}
+\end{flushright}
+
+
+%%% Local Variables: 
+%%% mode: latex
+%%% TeX-master: "thesis"
+%%% End: 

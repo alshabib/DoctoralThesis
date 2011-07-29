@@ -1,0 +1,11 @@
+The StyleFiles are needed for this thesis layout.
+
+Upon inicial compilation, a set of files with a .gnuplot extension is generated. These files must be passed through gnuplot to generate .table files. Then, the thesis must be recompiled and all plots will look GREAT!
+
+That said, depending on the tex build used to do the build the above process may occur automatically.
+
+Cheers,
+
+Ali <alshabibi.ali@gmail.com>
+
+PS. Oh and don't forget to compile the bibtext as well….

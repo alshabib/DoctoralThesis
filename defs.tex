@@ -1,0 +1,73 @@
+% defs.tex
+
+\newcommand{\rkw}[1]{\protect\texttt{\textbf{\small{#1}}}}
+\newcommand{\rrule}[1]{\rkw{rule} #1 \rkw{;}}
+\newcommand{\rbegin}[1][]{\rkw{begin #1}}
+\newcommand{\rend}{\rkw{end.}}
+\newcommand{\rto}{\rkw{$\mathbf\rightarrow$}}
+\newcommand{\rc}[1]{\protect\texttt{\small{#1}}}
+\newcommand{\rcomment}[1]{\protect\texttt{\footnotesize{// #1}}}
+\newcommand{\rv}[1]{\protect\rc{\$#1}}
+
+\newenvironment{rulecode}
+{\begin{list}
+    {}
+    {\setlength{\leftmargin}{2em}\setlength{\parsep}{0ex}\ttfamily\small}
+    \item[]
+}
+{\end{list}}
+
+
+\newenvironment{mylisting}
+{\begin{list}{}{\setlength{\leftmargin}{1em}}\item\scriptsize\bfseries}
+{\end{list}}
+
+\newenvironment{mytinylisting}
+{\begin{list}{}{\setlength{\leftmargin}{1em}}\item\tiny\bfseries}
+{\end{list}}
+
+
+\newcommand{\CC}{{C\nolinebreak[4]\hspace{-.05em}\raisebox{.4ex}{\tiny\bf++}}}
+
+\newcommand{\asfsdf}{\protect{}A\textsc{sf}$+$S\textsc{df}}
+
+\newcommand{\vnus}{\textit{Vnus}}
+\newcommand{\vcal}{\textit{V-cal}}
+\newcommand{\booster}{\textit{Booster}}
+\newcommand{\partool}{\textit{ParTool}}
+\newcommand{\rotan}{\textit{Rotan}}
+\newcommand{\timber}{\textit{Timber}}
+\newcommand{\tm}{\textit{Tm}}
+\newcommand{\rl}{\textit{Rule Language}}
+\newcommand{\spar}{\textit{Spar/Java}}
+\newcommand{\HRule}{\begin{center}\rule{5cm}{0.5mm} \end{center}}
+
+\makeatletter
+\newcommand\figcaption{\def\@captype{figure}\caption}
+\newcommand\tabcaption{\def\@captype{table}\caption}
+\makeatother
+
+%% Make sure that empty pages are really empty and  don't have header or footer
+%% info printed on them
+\makeatletter
+\def\cleardoublepage{\clearpage\if@twoside \ifodd\c@page\else
+  \hbox{}
+%  \vspace*{\fill}
+%  \begin{center}
+%    This page intentionally contains only this sentence.
+%  \end{center}
+%  \vspace{\fill}
+  \thispagestyle{empty}
+  \newpage
+  \if@twocolumn\hbox{}\newpage\fi\fi\fi}
+\makeatother
+
+\hyphenation{ArithmeticOp MinusOp non-paralleli-sa-ble Ponsen Amdahl op-ti-mi-sa-tion op-ti-mi-sa-tions owner-test in-ves-ti-gate speed-up cor-re-sponds it-er-a-tive-ly At-trib-ute at-trib-butes ma-trix rep-re-sen-ta-tion Scheerder JJForester Verbin-dungen katastropha-le Route-rn ungenutz-ten}
+
+
+
+
+%%% Local Variables:
+%%% mode: latex
+%%% TeX-master: "thesis"
+%%% End:

@@ -1,0 +1,17 @@
+% dedication.tex
+
+% The page containing the dedication
+
+\begin{titlepage}
+  \begin{flushright}
+    \vspace*{0cm}    % Forces the \vfill to work
+    \vfill
+    \textit{To my Iraqi family, the ones I know,\\ the ones I will never know, \\and the ones I have yet to meet.}
+    \vspace{2.5cm}
+  \end{flushright}
+\end{titlepage}
+
+%%% Local Variables:
+%%% mode: latex
+%%% TeX-master: "thesis"
+%%% End:

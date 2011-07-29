@@ -1,0 +1,98 @@
+\relax 
+\citation{OPFW}
+\citation{GENI}
+\citation{Emulab}
+\citation{StarBed}
+\@writefile{toc}{\contentsline {chapter}{\numberline {6}Materials \& Methods}{95}}
+\@writefile{lof}{\addvspace {10\p@ }}
+\@writefile{lot}{\addvspace {10\p@ }}
+\newlabel{chap:materials}{{6}{95}}
+\@writefile{toc}{\contentsline {section}{\numberline {6.1}OpenFlow \& NOX}{95}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {6.1.1}OpenFlow}{95}}
+\newlabel{sect:OPFW}{{6.1.1}{95}}
+\citation{XORP}
+\citation{CLICK}
+\citation{PlanetLab}
+\citation{NETFPGA}
+\@writefile{lof}{\contentsline {figure}{\numberline {6.1}{\ignorespaces The OpenFlow flow signature.\relax }}{96}}
+\newlabel{fig:flowsign}{{6.1}{96}}
+\@writefile{lof}{\contentsline {figure}{\numberline {6.2}{\ignorespaces The OpenFlow switch.\relax }}{97}}
+\newlabel{fig:openflow}{{6.2}{97}}
+\citation{NOX}
+\@writefile{toc}{\contentsline {subsection}{\numberline {6.1.2}NOX}{98}}
+\citation{RFC1812}
+\@writefile{toc}{\contentsline {section}{\numberline {6.2}TestBed Installation}{99}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {6.2.1}Routing Hardware}{99}}
+\newlabel{sect:NetHard}{{6.2.1}{99}}
+\newlabel{fig:normalrouting}{{6.3a}{100}}
+\newlabel{sub@fig:normalrouting}{{(a)}{a}}
+\newlabel{fig:HProuting}{{6.3b}{100}}
+\newlabel{sub@fig:HProuting}{{(b)}{b}}
+\@writefile{lof}{\contentsline {figure}{\numberline {6.3}{\ignorespaces An explanation of routing processes.\relax }}{100}}
+\@writefile{lof}{\contentsline {subfigure}{\numberline{(a)}{\ignorespaces {Standard routing model.}}}{100}}
+\@writefile{lof}{\contentsline {subfigure}{\numberline{(b)}{\ignorespaces {HP Openflow Routing.}}}{100}}
+\newlabel{fig:routing}{{6.3}{100}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {6.2.2}Network Installation}{101}}
+\@writefile{lof}{\contentsline {figure}{\numberline {6.4}{\ignorespaces The testbed as it is implemented at CERN's computing center.\relax }}{101}}
+\newlabel{fig:testbedreal}{{6.4}{101}}
+\citation{Netboot}
+\@writefile{lof}{\contentsline {figure}{\numberline {6.5}{\ignorespaces The connectivity map of the Testbed.\relax }}{102}}
+\newlabel{fig:schema}{{6.5}{102}}
+\citation{GETB}
+\citation{Python}
+\@writefile{toc}{\contentsline {subsection}{\numberline {6.2.3}Machine deployment}{103}}
+\@writefile{toc}{\contentsline {section}{\numberline {6.3}GETB Network Testers}{103}}
+\newlabel{sect:GETB}{{6.3}{103}}
+\@writefile{toc}{\contentsline {section}{\numberline {6.4}Experimental Technique}{104}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {6.4.1}Parasite Traffic}{104}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {6.4.2}Fully Meshed Traffic}{104}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {6.4.3}Latency}{104}}
+\@writefile{toc}{\contentsline {section}{\numberline {6.5}Summary}{104}}
+\@setckpt{MaterialMethods/materials}{
+\setcounter{page}{105}
+\setcounter{equation}{0}
+\setcounter{enumi}{2}
+\setcounter{enumii}{0}
+\setcounter{enumiii}{0}
+\setcounter{enumiv}{0}
+\setcounter{footnote}{4}
+\setcounter{mpfootnote}{0}
+\setcounter{part}{0}
+\setcounter{chapter}{6}
+\setcounter{section}{5}
+\setcounter{subsection}{0}
+\setcounter{subsubsection}{0}
+\setcounter{paragraph}{0}
+\setcounter{subparagraph}{0}
+\setcounter{figure}{5}
+\setcounter{table}{0}
+\setcounter{ContinuedFloat}{0}
+\setcounter{lofdepth}{1}
+\setcounter{lotdepth}{1}
+\setcounter{NAT@ctr}{0}
+\setcounter{parentequation}{0}
+\setcounter{ALC@unique}{0}
+\setcounter{ALC@line}{0}
+\setcounter{ALC@rem}{0}
+\setcounter{ALC@depth}{0}
+\setcounter{float@type}{8}
+\setcounter{algorithm}{0}
+\setcounter{KVtest}{0}
+\setcounter{subfigure}{0}
+\setcounter{subfigure@save}{2}
+\setcounter{subtable}{0}
+\setcounter{subtable@save}{2}
+\setcounter{tkzb@ca}{0}
+\setcounter{tkzb@cb}{0}
+\setcounter{tkzb@cc}{0}
+\setcounter{tkzb@v}{0}
+\setcounter{tkzb@cd}{0}
+\setcounter{tkzb@ce}{0}
+\setcounter{tkzb@cf}{0}
+\setcounter{tkzb@temp}{0}
+\setcounter{tkzb@int}{0}
+\setcounter{tkzb@next}{0}
+\setcounter{tkzb@ta}{5}
+\setcounter{tkzb@tb}{0}
+\setcounter{theorem}{2}
+}

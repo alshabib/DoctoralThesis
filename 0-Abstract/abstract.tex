@@ -1,0 +1,40 @@
+
+% Thesis Abstract -----------------------------------------------------
+
+
+%\begin{abstractslong}    %uncommenting this line, gives a different abstract heading
+\chapter{Abstract}        %this creates the heading for the abstract page
+
+This thesis presents novel approaches enhancing the performance of computer networks using multipaths. Our enhancements take the form of congestion-aware routing protocols. We present three protocols called MultiRoute, Step-Route, and finally PathRoute. Each of these protocols leverage both local and remote congestion statistics and build different representations (or views) of the network congestion by using an innovative representation of congestion for router-router links. These congestion statistics are then distributed via an aggregation protocol to other routers in the network. 
+
+For many years, multipath routing protocols have only been used in simple situations, such as Link Aggregation and/or networks where paths of equal cost (and therefore equal delay) exist. But, paths of unequal costs are often discarded to the benefit of shortest path only routing because it is known that paths of unequal length present different delays and therefore cause out of order packets which cause catastrophic network performances. Further, multipaths become highly beneficial when alternative paths are selected based on the network congestion. But, no realistic solution has been proposed for congestion-aware multipath networks. We present in this thesis a method which selects alternative paths based on network congestion and completely avoids the issue of out of order packets by grouping packets into flows and binding them to a single path for a limited duration.
+
+The implementation of these protocols relies heavily on OpenFlow and NOX. OpenFlow enables network researchers to control the behavior of their network equipment by specifying rules in the routers flow table.  NOX provides a simple Application Programming Interface (API) to program a routers flow table. Therefore by using OpenFlow and NOX, we are able to define new routing protocols like the ones which we will present in this thesis. 
+
+We show in this thesis that grouping packets together, while not optimal, still provides a significant increase in network performance. More precisely we show that our protocols can, in some cases, achieve up to N times the throughput of Shortest Path (SP), where N is the number of distinct paths of identical throughput from source to destination. We also show that our protocols provide more predictable throughput than simple hash-based routing algorithms. %extend this with steproute and pathroute results.
+
+Todays networks provide more and more connections between any source-destination pair. Most of these connections remain idle until some failure occurs. Using the protocols proposed in this thesis, networks could leverage the added bandwidth provided by these currently idle connections. Therefore, we could increase the overall performance of current networks without replacing the existing hardware.
+
+\HRule
+
+Diese Arbeit pr\"asentiert neuartige Ans\"atze, um die Leistung von Computernetzwerken durch multipaths zu verbessern.
+Unsere Verbesserungen haben die Form von congestionaware routing protocols. Wir pr\"asentieren drei Protokolle mit den Bezeichnungen
+MultiRoute, Step-Route und nally PathRoute. Jede dieser Protokolle lokale und entfernte Verkehrsstatistiken und bilden Repr\"asentierungen (oder Abbildungen) des Netzwerkverkehrs durch das Nutzen einer innovativen Representation des Verkehrsaufkommens von Router-Router Verbindungen. Diese Verkehrsstatistiken werden dann durch ein Aggregationsprotokoll zu anderen Routern im Netzwerk verteilt.
+
+Lange Jahre wurden multipath routing Protokolle nur in einfachen Situationen, so wie Link Aggregation benutzt und/oder Netzwerken bei denen Pfade mit selben Kosten (und deshalb die selben Verz\"ogerungen) vorherrschen. Jedoch sind Pfade mit unterschiedlichen Kosten oftmals zum nutzen des k\"urzesten und einzig routenden Pfades ausgesondert. Dies geschieht da es bekannt ist, dass Pfade von unterschiedlichen L\"angen andere zeigen und deshalb katastrophale Netzwerk Leistungen bewirken. Desweiteren werden multipaths hochgradig n\"utzlich, wenn alternative Pfade basierend auf Netzwerkauslastung ausgesucht werden. Jedoch wurde keine realistische L\"osung f\"ur auslastungsbewusste multipath Netzwerke. Wir presentieren in dieser Arbeit eine Methode, die alternative Pfade basierend auf Netzwerkauslastung selektiert und das Problem von out-of-order Packeten durch Gruppierung von Packeten in fliesst umgeht und sie f\"ur eine begrenzte Zeit in einen einzelnen Pfad bindet.
+
+Die Implementierung dieser Protokolle ist stark von OpenFlow und NOX abh\"angig. OpenFlow erm\"oglicht Netzwerk Forschern das Verhalten ihrer Netzwerkausr\"ustung durch Festlegung von Regeln in den fliesst Tabellen der Routern zu kontrollieren. NOX bietet eine einfaches Application Programming Interface (API), um fliesst Tabellen von Routern zu programmieren. Aufgrund dessen sind wir in der Lage neue Protokolle wie die, die wir in dieser Arbeit presentieren werden zu definieren.
+
+
+Wir demonstrieren in dieser Arbeit, dass die Gruppierung von Packeten eine signifikante Netzwerkleistungssteigerung liefert, auch wenn diese nicht optimal ist. Genauer gesagt zeigen wir auf wie unsere Protokolle in einigen F\"allen bis zu N mal den Durchlauf des Shortest Path erreichen, wobei N die Zahl der verschiedenen Pfade des identischen Durchlaufes von Quelle zum Ziel sind. Desweiteren zeigen wir, dass unsere Protokolle mehr vorhersehbahren Durchlauf als einfache hash-basierte Leitweg  Algorythmen liefern.
+
+
+Heutige Netzwerke liefern immer mehr Verbindungen zwischen s\"amtlichen Quell-Ziel Paaren. Die meisten dieser Verbindungen bleiben ungenutzt bis irgend ein Fehler stattfindet. Mit den Protokollen die in dieser Arbeit vorgeschlagen werden, k\"onnte sich der zus\"atzlichen Bandbreite dieser derzeitig ungenutzten Verbindungen bedient werden. Folglich k\"onnten wir die Gesamtleistung von bestehenden Netzwerken steigern, ohne die hardware zu ersetzen.
+
+% ----------------------------------------------------------------------
+
+
+%%% Local Variables: 
+%%% mode: latex
+%%% TeX-master: "../thesis"
+%%% End: 

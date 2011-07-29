@@ -1,0 +1,82 @@
+\relax 
+\@writefile{toc}{\contentsline {chapter}{\numberline {A}Collection of derivations}{129}}
+\@writefile{lof}{\addvspace {10\p@ }}
+\@writefile{lot}{\addvspace {10\p@ }}
+\newlabel{appdx:A}{{A}{129}}
+\@writefile{toc}{\contentsline {section}{\numberline {A.1}Disruptions in the Hash Threshold variant of ECMP}{129}}
+\newlabel{sect:HTE}{{A.1}{129}}
+\@writefile{lof}{\contentsline {figure}{\numberline {A.1}{\ignorespaces Before and After the deletion of the third next hop possibility.\relax }}{129}}
+\newlabel{fig:HashSpace}{{A.1}{129}}
+\newlabel{eq:disrupt}{{A.3}{130}}
+\@writefile{toc}{\contentsline {section}{\numberline {A.2}Backpressure messages given in AMP}{130}}
+\newlabel{sect:AMPCALC}{{A.2}{130}}
+\newlabel{eq:BM1}{{A.4}{130}}
+\newlabel{eq:BM2}{{A.5}{131}}
+\@writefile{toc}{\contentsline {section}{\numberline {A.3}Dependence of Message Length and Interarrival times}{131}}
+\newlabel{sect:KLEDEP}{{A.3}{131}}
+\newlabel{eq:inter1}{{A.6}{131}}
+\newlabel{eq:msglen}{{A.7}{131}}
+\newlabel{eq:inter2}{{A.8}{131}}
+\newlabel{eq:jointprobtent}{{A.9}{132}}
+\newlabel{eq:jointprobfinal}{{A.10}{132}}
+\@writefile{toc}{\contentsline {section}{\numberline {A.4}The Price of Anarchy in Multipath networks with linear cost functions}{133}}
+\newlabel{sect:linearanarchy}{{A.4}{133}}
+\newlabel{eq:costflow}{{A.11}{133}}
+\newlabel{def:nashflow}{{A.4}{133}}
+\newlabel{eq:anarchy}{{A.12}{134}}
+\newlabel{def:marginalfunc}{{A.4}{134}}
+\newlabel{def:optinash}{{A.4}{134}}
+\newlabel{def:lindelay}{{A.14}{134}}
+\newlabel{def:linprop}{{A.4}{134}}
+\newlabel{eq:costoptimal}{{A.15}{134}}
+\newlabel{eq:righthand}{{A.17}{135}}
+\newlabel{eq:lefthand}{{A.20}{135}}
+\newlabel{eq:upper}{{A.21}{135}}
+\@setckpt{Appendix1/appendix1}{
+\setcounter{page}{136}
+\setcounter{equation}{22}
+\setcounter{enumi}{2}
+\setcounter{enumii}{0}
+\setcounter{enumiii}{0}
+\setcounter{enumiv}{0}
+\setcounter{footnote}{0}
+\setcounter{mpfootnote}{0}
+\setcounter{part}{0}
+\setcounter{chapter}{1}
+\setcounter{section}{4}
+\setcounter{subsection}{0}
+\setcounter{subsubsection}{0}
+\setcounter{paragraph}{0}
+\setcounter{subparagraph}{0}
+\setcounter{figure}{1}
+\setcounter{table}{0}
+\setcounter{ContinuedFloat}{0}
+\setcounter{lofdepth}{1}
+\setcounter{lotdepth}{1}
+\setcounter{NAT@ctr}{0}
+\setcounter{parentequation}{0}
+\setcounter{ALC@unique}{0}
+\setcounter{ALC@line}{0}
+\setcounter{ALC@rem}{0}
+\setcounter{ALC@depth}{0}
+\setcounter{float@type}{8}
+\setcounter{algorithm}{0}
+\setcounter{KVtest}{0}
+\setcounter{subfigure}{0}
+\setcounter{subfigure@save}{2}
+\setcounter{subtable}{0}
+\setcounter{subtable@save}{2}
+\setcounter{tkzb@ca}{0}
+\setcounter{tkzb@cb}{0}
+\setcounter{tkzb@cc}{0}
+\setcounter{tkzb@v}{0}
+\setcounter{tkzb@cd}{0}
+\setcounter{tkzb@ce}{0}
+\setcounter{tkzb@cf}{0}
+\setcounter{tkzb@temp}{0}
+\setcounter{tkzb@int}{0}
+\setcounter{tkzb@next}{0}
+\setcounter{tkzb@ta}{5}
+\setcounter{tkzb@tb}{0}
+\setcounter{theorem}{2}
+}

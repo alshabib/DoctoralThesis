@@ -1,0 +1,119 @@
+\relax 
+\citation{DIJK}
+\@writefile{toc}{\contentsline {chapter}{\numberline {4}Multipath Theory and Models}{49}}
+\@writefile{lof}{\addvspace {10\p@ }}
+\@writefile{lot}{\addvspace {10\p@ }}
+\newlabel{chap:theory}{{4}{49}}
+\@writefile{toc}{\contentsline {section}{\numberline {4.1}Graph Algorithms}{49}}
+\newlabel{sect:GraphAlgo}{{4.1}{49}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.1.1}Dijkstra's Algorithm}{49}}
+\citation{Bellman1958}
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.1.2}Bellman-Ford Algorithm}{50}}
+\@writefile{lof}{\contentsline {figure}{\numberline {4.1}{\ignorespaces Running Example of Dijkstra's Algorithm\relax }}{51}}
+\@writefile{lof}{\contentsline {subfigure}{\numberline{(a)}{\ignorespaces {Initial Graph.}}}{51}}
+\@writefile{lof}{\contentsline {subfigure}{\numberline{(b)}{\ignorespaces {Search for node closest to A.}}}{51}}
+\@writefile{lof}{\contentsline {subfigure}{\numberline{(c)}{\ignorespaces {D found, repeat search for closest node.}}}{51}}
+\@writefile{lof}{\contentsline {subfigure}{\numberline{(d)}{\ignorespaces {Only consider node C, as others have already been found.}}}{51}}
+\@writefile{lof}{\contentsline {subfigure}{\numberline{(e)}{\ignorespaces {Consider only C again, for the same reason.}}}{51}}
+\@writefile{lof}{\contentsline {subfigure}{\numberline{(f)}{\ignorespaces {Green edges show the final shortest path graph.}}}{51}}
+\newlabel{fig:runDijk}{{4.1}{51}}
+\@writefile{lot}{\contentsline {table}{\numberline {4.1}{\ignorespaces Step by Step of Dijkstra's Algorithm\relax }}{52}}
+\newlabel{tab:runDijk}{{4.1}{52}}
+\@writefile{lof}{\contentsline {figure}{\numberline {4.2}{\ignorespaces Running Example of Bellman-Ford's Algorithm\relax }}{53}}
+\@writefile{lof}{\contentsline {subfigure}{\numberline{(a)}{\ignorespaces {Initial Graph}}}{53}}
+\@writefile{lof}{\contentsline {subfigure}{\numberline{(b)}{\ignorespaces {At node B, update distances according to edge traversal order}}}{53}}
+\@writefile{lof}{\contentsline {subfigure}{\numberline{(c)}{\ignorespaces {Update distance for node C, since it was missed in the last iteration.}}}{53}}
+\newlabel{fig:runBell}{{4.2}{53}}
+\citation{Selfish}
+\citation{Pigou}
+\@writefile{toc}{\contentsline {section}{\numberline {4.2}Selfish Routing}{54}}
+\@writefile{lof}{\contentsline {figure}{\numberline {4.3}{\ignorespaces Pigou's Example\relax }}{54}}
+\newlabel{fig:pigou}{{4.3}{54}}
+\citation{CommNets}
+\citation{KLEVol1}
+\@writefile{toc}{\contentsline {section}{\numberline {4.3}Analytical Models}{55}}
+\citation{Poisson}
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.3.1}Queue Theory}{56}}
+\newlabel{sect:queues}{{4.3.1}{56}}
+\@writefile{lof}{\contentsline {figure}{\numberline {4.4}{\ignorespaces A standard queue.\relax }}{56}}
+\newlabel{fig:queue}{{4.4}{56}}
+\citation{little}
+\newlabel{eq:GG1T}{{4.1}{57}}
+\newlabel{eq:GG1W}{{4.2}{57}}
+\newlabel{eq:Little}{{4.3}{57}}
+\newlabel{eq:GG1NQ}{{4.4}{57}}
+\@writefile{toc}{\contentsline {subsubsection}{M/M/1 Queue}{57}}
+\citation{Erlang}
+\newlabel{eq:MM1N}{{4.5}{58}}
+\newlabel{eq:MM1W}{{4.6}{58}}
+\newlabel{eq:MM1T}{{4.7}{58}}
+\@writefile{toc}{\contentsline {subsubsection}{M/M/m Queue}{58}}
+\newlabel{sect:mmmQ}{{4.3.1}{58}}
+\newlabel{eq:MMMPQ}{{4.8}{58}}
+\newlabel{MMMP0}{{4.9}{58}}
+\@writefile{lof}{\contentsline {figure}{\numberline {4.5}{\ignorespaces Average delay as a function of $\rho $.\relax }}{59}}
+\newlabel{fig:MM1INF}{{4.5}{59}}
+\citation{Burke}
+\citation{CommNets}
+\citation{DataNetworks}
+\newlabel{eq:MMMN}{{4.10}{60}}
+\newlabel{eq:MMMNQ}{{4.11}{60}}
+\newlabel{eq:MMMT}{{4.12}{60}}
+\newlabel{eq:MMMW}{{4.13}{60}}
+\@writefile{toc}{\contentsline {subsubsection}{Kleinrock's Independence Assumption}{60}}
+\newlabel{sect:kleindep}{{4.3.1}{60}}
+\newlabel{th:Burke}{{1}{60}}
+\@writefile{lof}{\contentsline {figure}{\numberline {4.6}{\ignorespaces A tandem network.\relax }}{60}}
+\newlabel{fig:tandem}{{4.6}{60}}
+\citation{CommNets}
+\citation{CommNets}
+\newlabel{th:indep}{{2}{61}}
+\@writefile{toc}{\contentsline {section}{\numberline {4.4}Summary}{61}}
+\@setckpt{Theory/theory}{
+\setcounter{page}{63}
+\setcounter{equation}{13}
+\setcounter{enumi}{5}
+\setcounter{enumii}{0}
+\setcounter{enumiii}{0}
+\setcounter{enumiv}{0}
+\setcounter{footnote}{2}
+\setcounter{mpfootnote}{0}
+\setcounter{part}{0}
+\setcounter{chapter}{4}
+\setcounter{section}{4}
+\setcounter{subsection}{0}
+\setcounter{subsubsection}{0}
+\setcounter{paragraph}{0}
+\setcounter{subparagraph}{0}
+\setcounter{figure}{6}
+\setcounter{table}{1}
+\setcounter{ContinuedFloat}{0}
+\setcounter{lofdepth}{1}
+\setcounter{lotdepth}{1}
+\setcounter{NAT@ctr}{0}
+\setcounter{parentequation}{0}
+\setcounter{ALC@unique}{0}
+\setcounter{ALC@line}{0}
+\setcounter{ALC@rem}{0}
+\setcounter{ALC@depth}{0}
+\setcounter{float@type}{8}
+\setcounter{algorithm}{0}
+\setcounter{KVtest}{0}
+\setcounter{subfigure}{0}
+\setcounter{subfigure@save}{3}
+\setcounter{subtable}{0}
+\setcounter{subtable@save}{2}
+\setcounter{tkzb@ca}{0}
+\setcounter{tkzb@cb}{0}
+\setcounter{tkzb@cc}{0}
+\setcounter{tkzb@v}{0}
+\setcounter{tkzb@cd}{0}
+\setcounter{tkzb@ce}{0}
+\setcounter{tkzb@cf}{0}
+\setcounter{tkzb@temp}{0}
+\setcounter{tkzb@int}{0}
+\setcounter{tkzb@next}{0}
+\setcounter{tkzb@ta}{5}
+\setcounter{tkzb@tb}{0}
+\setcounter{theorem}{2}
+}

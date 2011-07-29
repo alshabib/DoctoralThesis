@@ -1,0 +1,114 @@
+\chapter{Results \& Discussion}
+\label{chap:results}
+
+\ifpdf
+    \graphicspath{{Results/Chapter7Figs/}}
+\else
+    \graphicspath{{Results/Chapter7Figs/}}
+\fi
+
+\begin{flushright}
+ \textit{\textquotedblleft Insanity: doing the same thing over and over again \\
+ and expecting different results.\textquotedblright}\\
+\textit{-- Albert Einstein}
+\end{flushright}
+
+
+In this chapter we will present the most notable results which were obtained
+from our real-world testbed implementation. First, we will present a scenario
+in which our protocols perform exceptionally well. Then, we show that even in
+the extreme worst cases, our protocols still present an improvement over the
+legacy. Finally, we show how the latency and packet loss are affected by our
+protocols. But before presenting the results we should introduce the topologies
+on which the results where generated.
+
+\section{Test Topologies \& Associated Routing Tables}
+
+The Flower, shown in Figure \ref{fig:flower}, is the first topology we present.
+It consists on a fully connected sqare with two networks at either side of this
+network. This topology is quite common in campus networks as it provides
+rudundant paths between the exterior networks (SW1 and SW6 in this case). While
+it contains relatively many links it only delivers a maximum of two absolutely
+independent paths from any source to any destination. 
+
+\ifigure{Flower}{0.76}{The Flower topology.}{fig:flower}
+
+
+\begin{table}[h!]
+  \begin{center}
+    \begin{tabular}{| c | c || c | c | c | c | c | c |}
+    \hline
+      \multicolumn{2}{|c|}{\multirow{2}{*}{}}  &
+\multicolumn{6}{|c|}{Destination} \\
+    \cline{3-8}
+       \multicolumn{2}{|c|}{} & SW1 & SW2 & SW3 & SW4 & SW5 & SW6 \\
+    \hline
+    \multirow{6}{*}{\rotatebox{90}{Source}} & SW1 & L & 47 & 48 & [47,48] &
+[47,48] & [47,48] \\
+    & SW2 & 47 & L & 45 & 43 & 41 & [43, 41] \\
+    & SW3 & 48 & 45 & L & 39 & 37 & [37, 39] \\
+    & SW4 & [43, 39] & 43 & 39 & L & 46 & 37\\
+    & SW5 & [41, 37] & 41 & 37 & 46 & L & 40 \\
+    & SW6 & [38, 40] & [38, 40] & [38, 40] & 38 & 40 & LOCAL \\
+    \hline
+    \end{tabular}
+  \end{center}
+  \caption{The routing table associated to the Flower topology.}
+\label{tab:flowerRoute}
+\end{table}
+
+The low number of independent paths means that the oppourtunity for leveraging
+the alternative paths is reduced. Therefore, the fullmesh runs should
+display similar results regardless of the protocol used. It's associated
+routing table is shown in Table \ref{tab:flowerRoute}.
+
+The next topology used is called the Pentagon due to its pentagonal shape. This
+topology presents many more alternative paths from any source to any
+destination. This topology is also quite common in campus networks as the
+consists of a starpoint centered on SW6, each neighboring network is then
+connected to each other to provide redundancy. The routing table is shown in
+Table \ref{pentagonRoute}. 
+
+
+
+\ifigure{Pentagon}{0.76}{The Pentagon topology.}{fig:Pentagon}
+
+
+\begin{table}[h!]
+  \begin{center}
+    \begin{tabular}{| c | c || c | c | c | c | c | c |}
+    \hline
+      \multicolumn{2}{|c|}{\multirow{2}{*}{}}  &
+\multicolumn{6}{|c|}{Destination} \\
+    \cline{3-8}
+       \multicolumn{2}{|c|}{} & SW1 & SW2 & SW3 & SW4 & SW5 & SW6 \\
+    \hline
+    \multirow{6}{*}{\rotatebox{90}{Source}} & SW1 & L & 26 & 27 & [26,25] &
+[27,25] & 25 \\
+    & SW2 & 26 & L & [26, 27] & 28 & [27, 28, 26] & 27 \\
+    & SW3 & 27 & [27, 29] & L & [29, 30, 27] & 30 & 29 \\
+    & SW4 & [28, 31] & 28 & [31, 32, 28] & L & 32 & 31\\
+    & SW5 & [30, 33] & [32, 33] & 30 & 32 & L & 33 \\
+    & SW6 & 25 & 27 & 29 & 31 & 33 & L  \\
+    \hline
+    \end{tabular}
+  \end{center}
+  \caption{The routing table associated to the Pentagon topology.}
+\label{tab:pentagonRoute}
+\end{table}
+
+It should be also noted that the entries in the routing tables are sorted by
+distance to the destinaion. Therefore, the leftmost entry is the shortest to
+the destination.
+
+\section{Parasite Traffic}
+
+
+
+\section{Fully-Meshed Traffic}
+
+For each topo \& proto
+
+\section{Latency Tests}
+
+For each topo \& proto

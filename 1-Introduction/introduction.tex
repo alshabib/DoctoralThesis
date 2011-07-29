@@ -1,0 +1,234 @@
+
+%%% Thesis Introduction --------------------------------------------------
+\chapter{Introduction}
+\ifpdf
+  \graphicspath{{1-Introduction/IntroductionFigs/PNG/}{1-Introduction/IntroductionFigs/PDF/}{1-Introduction/IntroductionFigs/}}
+\else
+  \graphicspath{{1-Introduction/IntroductionFigs/EPS/}{1-Introduction/IntroductionFigs/}}
+\fi
+
+Over the past two decades the Internet has grown at an unprecedented rate.
+Estimates show that one in five inhabitants of the planet are now connected to
+the Internet. That number is expected to grow rapidly with the emergence of
+mobile devices and increasing penetration in developing countries as depicted in
+Figure \ref{fig:internetpenetration}. This has, and will, lead to the deployment
+of more networking infrastructure and therefore there will be an increase in
+connectivity worldwide. 
+
+\ifigure{Internet_penetration_1997-2007_ITU}{0.25}{Internet users per 100 inhabitants 1997-2007}{fig:internetpenetration}
+
+This increase comes with extra challenges for ISPs to provide a continued good
+level of service to customers, achieve their operational objectives and
+differentiate their service offerings. The increased infrastructure and
+connectivity brings new problems in traffic engineering, namely in terms of
+congestion and network performance. One of the major challenges to Internet
+traffic engineering is constructing the ability for automated control that
+adapts rapidly to a changing network state as mentioned in \cite{RFC3272}. This
+challenge is precisely the topic of discussion in this thesis.
+
+Besides these challenges, the increase in connectivity and infrastructure brings
+a new opportunity to the Internet by providing many redundant connections
+between networks. Each of these redundant connections can be seen as an
+alternative path for networks, which are currently unused by routing protocols.
+Moreover, current technologies do not use congestion information as a criteria
+for their routing decision process. For these reasons, research in multipath
+routing protocols has become very active. By embracing the Internet's growth and
+using appropriate technologies to measure and distribute congestion indications,
+it is our belief that a viable multipath routing protocol will emerge.
+
+\section{Today's Internet}
+
+Packet switched networks rely quasi-entirely on efficient routing algorithms.
+Current protocols have been designed to mainly deliver network robustness and
+resiliency in the event of a failure. While this has been a noble and just
+cause, the research community and interests are shifting towards traffic
+engineering, ie. the optimization of networks in terms of performance. Current
+technologies have not been designed for traffic engineering as they do not
+provide a simple solution to allocate network resources with respect to changing
+traffic demands. 
+
+Nowadays, the Internet is built mainly on shortest path first protocols such as
+OSPF in \cite{OSPF}, RIP in \cite{RIP} , etc. Such protocols only consider the
+shortest path between two networks and either discard alternative paths or they
+will only consider alternatives which are of equal cost to the shortest path.
+This, of course, has the disadvantage of not only limiting the maximum throughput between
+any two networks; but also, and much worse, increasing the probability of
+congestion. 
+
+Current operational networks suffer significantly from issues related primarily 
+to congestion. A network device is said to be congested if it experiences a
+sustained overload over an interval of time. Congestion almost always causes a
+degradation of the throughput offered by network connections. 
+
+In an effort to solve these problems, much research has been done employing
+multipath solutions. One interesting single path approach by 
+\cite{TrafficEngOSPFWeights} was to use the current technologies, mainly OSPF in multipath scenarios,
+and modify the connections weights based on the projected network resources
+demands by users. Unfortunately the optimization problem was shown to be
+computationally intractable (NP-hard), and moreover it was very difficult to
+obtain timely and accurate traffic values from a live network. Since such
+solutions will always require the use of heuristics, a solution involving a
+multipath protocol may be far simpler. 
+
+\section{The Benefits of Multipath}
+
+Multipath technology attempts to exploit the underlying physical network
+resources more efficiently by providing multiple paths between source and
+destination pairs. By providing multiple paths, multipath technologies have the
+ability to aggregate the bandwidth offered by the various paths and thereby
+enable the network to support higher data rates than that supported by a
+single path. Moreover, since multipath technologies function over several paths
+simultaneously, we can expect increased resiliency to failure due to the fact
+that as one path fails others are still in operation. Furthermore, if there is a
+network failure re-computation can be done off-line while the multipath protocol
+is still transporting traffic, thereby rendering failures virtually transparent
+to users.
+
+A multipath protocol needs to guarantee two essential aspects. The first being
+the computation of multiple loop-free paths and the second is the ability to
+split traffic amongst these paths efficiently. When considering a multipath
+scheme, the device implementing such a scheme must first calculate the set of
+paths available between the source and destination. There are two concepts which
+characterize a path set:
+
+\begin{itemize}
+ \item \textit{Path Quantity} defines the number of available paths between the
+nodes. A higher number indicates that there is a better chance at load
+distribution.
+ \item \textit{Path Independence} describes the freedom of each path set, ie.
+does this path set contain paths which share one or more links with other path
+sets? Evidently, independent path sets are ideal but complete independence can
+be very difficult to achieve.
+\end{itemize}
+
+\ifigure{TestBed}{0.7}{Illustration of Path Quantity and Independence.}{fig:test}
+
+Figure \ref{fig:test} illustrates these two concepts. Consider the following
+paths set for node A sending data to node F, $\wp_1 = \{(A-B-E-F), (A-C-E-F)\}$
+and $\wp_2 = \{(A-B-D-F), (A-C-E-F)\}$. Both path sets contain the same number of
+paths, but for path set $\wp_1$, we can easily see that the paths are not
+independent due to the fact that they share link E-F. Path set $\wp_2$ is
+independent and therefore would lead to better usage of the network resources
+and would be less likely to get congested. Multipath protocols which try to
+optimize these concepts will therefore deliver higher performance. While these
+concepts are essential, we also believe it is vital to inform the multipath
+protocol about the network status and also it needs to be aware of the network
+topology, these concepts will be introduced in Section \ref{sect:contributions}.
+
+\section{The Applications of Multipath Routing}
+
+\subsection{Load Balancing}
+
+Load balancing, in the context of Multipath routing, is geared towards minimizing
+the risk of congestion by making more use of the available network resources. By
+minimizing congestion, the idea is to reduce packet loss to a minimum but, on
+the other hand, if alternative paths are inaccurately chosen then we would
+obtain additional propagation delay. We therefore have a trade-off situation,
+namely throughput versus delay, as some network applications are sensitive to
+packet loss whilst others are affected by delay. As we will see later, it is
+very important to be able to control this trade-off.
+
+The ability to control the traffic flow is essential when deploying a load
+balancing solution. In traditional systems, the network administrator had to
+control the link metrics taking care not to disrupt the overall traffic flow. In
+a multipath system, the routing algorithm is responsible for monitoring the
+metrics and taking action based on them thereby resulting in rapid adaptation to
+changing network conditions.
+
+\subsection{Quality of Service}
+
+Quality of Service has long been a feature which has been difficult to
+implement. The IETF's (Internet Engineering Task Force) Integrated Services has
+shown scalability problems when faced with the large amount of memory required
+to store routing states and to maintain consistency. Another IETF effort, called
+Differentiated Services has also proved to be non feasible as it would impose a
+significant overhead to cope with link failures and maintain consistency \cite{DiffServLimits}.
+
+Multipath offers a scalable solution to Quality of Service, as various paths can
+be reserved for a specific type of service. Flows of similar types can be
+aggregated, and therefore the quality for an aggregated flow can be guaranteed which in
+turn provides guarantees to an individual flow.
+
+\section{Thesis Contributions}
+\label{sect:contributions}
+
+This thesis presents a new approach to multipath routing, called MultiRoute,
+which is media independent and this solution can co-exist with current routing
+technology. This protocol breaks down the underlying global optimization problem
+of resource allocation into a set of local problems. The next-hop for each
+destination is computed off-line and stored in the routers forwarding table,
+enabling a rapid next-hop lookup. Traffic is then grouped into a flow identified
+by several parameters, and assigned to the port corresponding to its next-hop. A
+flows assignation is immutable for the duration of its lifetime, thereby
+avoiding path oscillations and thus providing a guarantee for the
+protocol's stability.
+
+The first contribution is a method for computing alternative paths based on a
+modified Dijkstra algorithm. The multiple path discovery process relies on the
+existence of a shortest path between source and destination points. After
+establishing the shortest path cost (the reference cost), each alternate path is
+computed whose cost is within a reasonable delta of the reference cost. This
+ensures that the latency versus throughput trade-off is respected.
+
+The second contribution is an In-Network monitoring protocol to distribute the
+statistical information, eg. counter values or congestion representations, to other routers. The statistics are polled locally by
+the router and sent to neighboring routers, this process is performed in-band
+and not by an external monitoring process. A one bit representation of
+congestion is used, thereby reducing to a minimum the size of the monitoring
+information and therefore its impact on the network load. Disseminating the
+congestion information is achieved by using an aggregation protocol, therefore
+allowing for real-time statistics to be distributed within the network
+efficiently.
+
+A third contribution is a novel topology representation which allows routers to
+enhance their routing decision based on the destination of a flow. Each router
+maintains its own routing vector, consisting of congestion representation of its
+paths to different networks. Routing vectors are then exchanged with neighboring
+routers using the In-Network monitoring. The neighboring router is required to
+interpret this information according to its own forwarding table, therefore each
+router must be aware of the forwarding table of each of its neighboring routers.
+To achieve this, we introduce the concept of a \textit{routing mask} which
+represents the structure of forwarding tables in multipath enabled routers.
+
+The fourth and final contribution of this thesis is the deployment and installation of a real world testbed. This test bed was used to develop, test and perform experiments on our routing protocols. The testbed was implemented using NOX and OpenFlow technology using commodity ethernet hardware.
+
+Experimental results will be presented to demonstrate both the correct
+functioning of the routing protocol and the improvements over existing
+technologies. Representative topologies presented, and in each case a
+multitude of traffic patterns, will be used to test each protocol. The routing protocol will
+be submitted to several scenarios in order to establish its effect on delay and
+throughput. Results show that in most cases our protocol outperforms shortest
+path and other multipath technologies in terms of throughput and delay.
+
+% VERIFY ABOVE CLAIM WHEN RESULTS ARE READY!!!!!
+
+\section{Outline}
+
+A brief and elementary introduction to networking will be presented in Chapter
+\ref{chap:hist}. Chapter \ref{chap:hist} will also define routing and why it
+exists, followed by an overview of existing technologies and their
+classification. 
+
+The state-of-the-art is discussed in Chapter \ref{chap:multipath}, where several
+other multipath protocols designed for different situations will be presented.
+Chapter \ref{chap:theory} will introduce theoretical aspects of multipath
+routing and discuss the limitations of current models, and therefore demonstrate the
+mathematical complexity in building an accurate model. Next in Chapter
+\ref{chap:cornerstones}, we discuss the important components that have to be
+taken into account when building a multipath system.
+
+Chapter \ref{chap:materials} will be describing the experimental setup and
+detail the implementation of this routing protocols and those used as
+comparison. Finally Chapter \ref{chap:results} will present the results of this
+protocol when compared with other multipath protocols under varying topologies,
+scenarios and metrics.
+
+
+
+%%% ----------------------------------------------------------------------
+
+
+%%% Local Variables: 
+%%% mode: latex
+%%% TeX-master: "../thesis"
+%%% End: 

@@ -1,0 +1,77 @@
+\relax 
+\@writefile{toc}{\contentsline {chapter}{\numberline {B}Collection of Pseudocodes}{137}}
+\@writefile{lof}{\addvspace {10\p@ }}
+\@writefile{lot}{\addvspace {10\p@ }}
+\newlabel{appdx:B}{{B}{137}}
+\@writefile{toc}{\contentsline {section}{\numberline {B.1}Dijkstra's Algorithm Pseudocode}{137}}
+\newlabel{sect:dijkpseudo}{{B.1}{137}}
+\@writefile{loa}{\contentsline {algorithm}{\numberline {1}{\ignorespaces Dijkstra's Algorithm\relax }}{137}}
+\newlabel{alg:dijk}{{1}{137}}
+\@writefile{toc}{\contentsline {section}{\numberline {B.2}Bellman-Ford's Algorithm Pseudocode}{138}}
+\newlabel{sect:bellpseudo}{{B.2}{138}}
+\newlabel{alg:bell}{{\caption@xref {alg:bell}{ on input line 38}}{138}}
+\@writefile{loa}{\contentsline {algorithm}{\numberline {2}{\ignorespaces Bellman-Ford's Algorithm\relax }}{138}}
+\@writefile{toc}{\contentsline {section}{\numberline {B.3}MultiRoute Path Construction - Pseudocode and Proof}{139}}
+\newlabel{appdx:mrpc}{{B.3}{139}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {B.3.1}Proof}{139}}
+\@writefile{toc}{\contentsline {section}{\numberline {B.4}MultiRoute Protocol Family}{141}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {B.4.1}The Classical - MultiRoute}{141}}
+\newlabel{appdx:MR}{{B.4.1}{141}}
+\newlabel{alg:MR}{{\caption@xref {alg:MR}{ on input line 176}}{141}}
+\@writefile{loa}{\contentsline {algorithm}{\numberline {3}{\ignorespaces The Classical Algorithm\relax }}{141}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {B.4.2}The Classifier - StepRoute}{143}}
+\newlabel{appdx:SR}{{B.4.2}{143}}
+\newlabel{alg:SR}{{\caption@xref {alg:SR}{ on input line 220}}{143}}
+\@writefile{loa}{\contentsline {algorithm}{\numberline {4}{\ignorespaces The StepRoute Algorithm\relax }}{143}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {B.4.3}The Know-it-all - PathRoute}{145}}
+\newlabel{appdx:PR}{{B.4.3}{145}}
+\newlabel{alg:PR}{{\caption@xref {alg:PR}{ on input line 269}}{145}}
+\@writefile{loa}{\contentsline {algorithm}{\numberline {5}{\ignorespaces The PathRoute Algorithm\relax }}{145}}
+\@setckpt{Appendix2/appendix2}{
+\setcounter{page}{146}
+\setcounter{equation}{0}
+\setcounter{enumi}{3}
+\setcounter{enumii}{0}
+\setcounter{enumiii}{0}
+\setcounter{enumiv}{0}
+\setcounter{footnote}{0}
+\setcounter{mpfootnote}{0}
+\setcounter{part}{0}
+\setcounter{chapter}{2}
+\setcounter{section}{4}
+\setcounter{subsection}{3}
+\setcounter{subsubsection}{0}
+\setcounter{paragraph}{0}
+\setcounter{subparagraph}{0}
+\setcounter{figure}{0}
+\setcounter{table}{0}
+\setcounter{ContinuedFloat}{0}
+\setcounter{lofdepth}{1}
+\setcounter{lotdepth}{1}
+\setcounter{NAT@ctr}{0}
+\setcounter{parentequation}{0}
+\setcounter{ALC@unique}{111}
+\setcounter{ALC@line}{12}
+\setcounter{ALC@rem}{12}
+\setcounter{ALC@depth}{0}
+\setcounter{float@type}{8}
+\setcounter{algorithm}{5}
+\setcounter{KVtest}{0}
+\setcounter{subfigure}{0}
+\setcounter{subfigure@save}{2}
+\setcounter{subtable}{0}
+\setcounter{subtable@save}{2}
+\setcounter{tkzb@ca}{0}
+\setcounter{tkzb@cb}{0}
+\setcounter{tkzb@cc}{0}
+\setcounter{tkzb@v}{0}
+\setcounter{tkzb@cd}{0}
+\setcounter{tkzb@ce}{0}
+\setcounter{tkzb@cf}{0}
+\setcounter{tkzb@temp}{0}
+\setcounter{tkzb@int}{0}
+\setcounter{tkzb@next}{0}
+\setcounter{tkzb@ta}{5}
+\setcounter{tkzb@tb}{0}
+\setcounter{theorem}{2}
+}

@@ -1,0 +1,297 @@
+\chapter{Collection of Pseudocodes}
+\label{appdx:B}
+\section{Dijkstra's Algorithm Pseudocode}
+\label{sect:dijkpseudo}
+\singlespacing
+\begin{algorithm}
+\caption{Dijkstra's Algorithm}
+\label{alg:dijk}
+ \begin{algorithmic}
+  \REQUIRE A network $ R = (V, E, c), \left| V \right| = n, \left| V \right| = m,$ where $ c: E \mapsto \Re_{+}$ is a weighting of arcs on the graph $ G = (V,E) $. A particular vertex $S \in V$ called the source.
+  \ENSURE For all vertex $v \in V$, the lengths $D\left(v\right)$ are guaranteed to be minimal.
+  \STATE $D\left(S\right) = 0$
+  \STATE $D\left(v\right) = \infty, \forall v \neq S \in V$
+  \STATE $\forall v \in V, P_{v} = \varnothing$
+  \STATE $Q = V$
+  \WHILE{$Q \neq \varnothing$}
+    \STATE $ u \leftarrow REMOVE-MIN\left(Q\right)$
+%    \IF { $ u = \varnothing$ }
+%      \STATE Graph disjoint, QUIT
+%    \ENDIF
+    \FOR { each $v \in Adj\left(u\right)$ }
+      \IF { $D\left(v\right) > D\left(u\right) + c\left(u,v\right)$ }
+        \STATE $D\left(v\right) \leftarrow D\left(u\right) + c\left(u,v\right)$
+        \STATE $P_{v} = v$
+      \ENDIF
+    \ENDFOR
+  \ENDWHILE
+ \end{algorithmic}
+\end{algorithm}
+
+\newpage
+
+\section{Bellman-Ford's Algorithm Pseudocode}
+\label{sect:bellpseudo}
+
+\singlespacing
+\begin{algorithm}
+\label{alg:bell}
+\caption{Bellman-Ford's Algorithm}
+ \begin{algorithmic}
+  \REQUIRE A network $ R = (V, E, c), \left| V \right| = n, \left| V \right| = m,$ where $ c: E \mapsto \Re$ is a weighting of arcs on the graph $ G = (V,E) $. A particular vertex $S \in V$ called the source.
+  \ENSURE For all vertex $v \in V$, the lengths $D\left(v\right)$ are guaranteed to be minimal.
+  \FOR {each vertex $u \in V$}
+    \STATE $d[u] = \infty$
+    \STATE $p[u] = u$
+  \ENDFOR
+  \STATE $d[s] = 0$
+  \FOR {$i = 1$ to $|V|-1$} 
+    \FOR {each edge $(u,v) \in E$} 
+      \IF {$(w(u,v) + d[u] < d[v])$}
+	\STATE $d[v] = w(u,v) + d[u]$
+	\STATE $p[v] = u$
+      \ENDIF
+   \ENDFOR
+  \ENDFOR
+ \end{algorithmic}
+\end{algorithm}
+
+\newpage
+
+\section{MultiRoute Path Construction - Pseudocode and Proof}
+\label{appdx:mrpc}
+
+\begin{algorithm}
+ \begin{algorithmic}
+  \REQUIRE A Network $ R = (V, E, c), \left| V \right| = n, \left| V \right| =
+m,$ where $ c: E \mapsto \Re_{+}$ is a weighting of arcs on the graph $ G
+= (V,E)$. A particular vertex $S \in V$, and $\varepsilon$ which is the
+tolerance to the optimal path length
+  \ENSURE For all vertex $v \in V$, the lengths $D\left(v\right)$ of a
+alpha-shortest independant paths
+  within $\varepsilon$ of the optimal path length ( the
+$\varepsilon$-property). From S to v ($D\left(v\right) = \infty$ if there is no
+path from s to v in G) along with the immediate predecessor(s) $P_{v}$ of vertex
+v in such a path.
+  \STATE $D\left(S\right) = 0$
+  \STATE $D\left(v\right) = 0, \forall v \neq S \in V$
+  \STATE $\forall v \in V, P_{v} = \varnothing$
+  \STATE $Q = V$
+  \WHILE{$Q \neq \varnothing$}
+    \STATE $ u \leftarrow REMOVE-MIN\left(Q\right)$
+    \STATE $ K \leftarrow \{k \in Q | \left| D\left(u\right) - D\left(k\right)
+\right| \leq \varepsilon \} $
+    \IF { $ u = \varnothing$ }
+      \STATE Graph disjoint, QUIT
+    \ENDIF
+    \FOR { each $v \in Adj\left(u\right)$ }
+      \IF { $D\left(v\right) > D\left(u\right) + c\left(u,v\right)$ }
+        \STATE $D\left(v\right) \leftarrow D\left(u\right) + c\left(u,v\right)$
+        \STATE $P_{v} = P_{v} \cup \{v\}$
+      \ENDIF
+      \IF { $D\left(v\right) > D\left(k\right) + c\left(k,v\right) and
+\left|D\left(k\right) +  c\left(k,v\right) - D\left(v\right) \right| \leq
+\varepsilon$ }
+        \STATE $D\left(v\right) \leftarrow D\left(k\right) + c\left(k,v\right)$
+        \STATE $P_{v} = P_{v} \cup \{k\}$
+      \ENDIF
+    \ENDFOR
+  \ENDWHILE
+ \end{algorithmic}
+\end{algorithm}
+
+\subsection{Proof}
+
+We will now proove the correctness of the MRPC algorithm. This proof is heavily
+based on Dijkstra's algorithms own correctness proof and the Optimality
+Principle.
+
+\begin{itemize}
+\item{\textbf{Proposition - }\\
+  The algorithm terminates with with:\\
+\begin{center}
+ $\forall v \in V, \delta\left(S,v\right) = D\left(v\right) <
+\delta\left(S,v\right) + \varepsilon$,\\
+\end{center}
+where $\delta\left(S,v\right)$ is the shortest path between S and v.}
+
+\item{\textbf{Case I:} 
+\begin{center}
+$\delta\left(S,v\right) \leq D\left(v\right)$\\ 
+\end{center}
+  This is given directly by proof of Dijkstra'a algoritm stating that the
+shortest distance between $S$ and $v$ is the one recorded at $v$.}
+
+\item{\textbf{Case II:} 
+
+\begin{center}
+$D\left(v\right) < \delta\left(S,v\right) + \varepsilon$ \\
+\end{center}
+  We only consider an arc if:
+\begin{center}
+  $D\left(v\right) > D\left(u\right) + c\left(u,v\right) and
+\left|D\left(u\right) + c\left(u,v\right) - D\left(v\right)\right| \leq
+\varepsilon$
+\end{center}
+
+We know: $\delta\left(S,v\right) = D\left(u\right) + c\left(u,v\right)$ because
+of the optimality principle and Dijkstra's algorithm.
+
+From the equations above we have that:
+\begin{center}
+ $\left|\delta\left(S,v\right) - D\left(v\right) \right| \leq \varepsilon$
+\end{center}
+
+This gives us three possible cases detailed below.
+
+\begin{enumerate}
+\item{$\delta\left(S,v\right) - D\left(v\right) = 0 $ \\
+  This case is covered by Case I.}
+\item{$\delta\left(S,v\right) - D\left(v\right) > 0 $\\
+  In this case we obtain that:\\
+\begin{center}
+ $\delta\left(S,v\right) - \varepsilon \leq D\left(v\right)$\\
+\end{center}
+Which is not possible, because we know from Dijkstra that
+$\delta\left(S,v\right)$ is the shortest path.}
+
+\item {$\delta\left(S,v\right) - D\left(v\right) < 0 $\\
+  Here we have:\\
+\begin{center}
+ $ D\left(v\right) < \delta\left(S,v\right) + \varepsilon$\\
+\end{center}}
+Which is indeed what we wanted.
+ 
+\end{enumerate}}
+\end{itemize}
+
+\newpage
+\section{MultiRoute Protocol Family}
+
+\subsection{The Classical - MultiRoute}
+\label{appdx:MR}
+
+\singlespacing
+\begin{algorithm}[!htbp]
+\label{alg:MR}
+\caption{The Classical Algorithm}
+ \begin{algorithmic}
+  \REQUIRE The local network identifier $locNet$, the destination network $dstNet$, the sorted set (from shortest to longest path) of available ports, $P$, for this destination. The set of routing masks, $RM$ associated to each possible next hop and the local routing mask $LRM$. The latest update vectors for each possible next hop and the local router, $UV$ and $LUV$ respectively.
+  \ENSURE The output port, $R$, associated with the path containing lowest congestion or the path along the shortest path.
+  \STATE $LocalCongestion = ObtainCongestionStatus(LUV, LRM,  dstnet)$
+  \STATE $ (max, port) = (0, ports[0])$
+  \IF {LocalCongestion contains all False or LocalCongestion contains all True}
+  	\FOR {each $p \in P$}
+		\STATE $RemoteCongestion = ObtainCongestionStatus(UV_{p}, RM_{p}, dstnet)$
+		\IF {RemoteCongestion contains all False}
+			\RETURN p
+		\ELSE
+			\IF {$max < RemoteCongestionStatus.getNumFalse()$}
+				\STATE (max, port) = (RemoteCongestionStatus.getNumFalse(), port)
+			\ENDIF
+		\ENDIF
+	\ENDFOR
+  \ELSE %{$LocalCongestion contains some False$}
+  	\FOR {each p associated to an uncongested link }
+		\STATE $RemoteCongestion = ObtainCongestionStatus(UV_{p}, RM_{p}, dstnet)$
+		\IF {RemoteCongestion contains all False}
+			\RETURN p
+		\ELSE
+			\IF {$max < RemoteCongestionStatus.getNumFalse()$}
+				\STATE (max, port) = (RemoteCongestionStatus.getNumFalse(), port)
+			\ENDIF
+		\ENDIF
+	\ENDFOR	 
+  \ENDIF
+\RETURN port 
+ \end{algorithmic}
+\end{algorithm}
+
+\textit{ObtainCongestionStatus} compares the local update vector with the routing mask, and using the destination network id returns the bitset of congestion indications which matches the order of the set of ports \textit{P}.
+
+A link is considered uncongested when the corresponding entry in \textit{LocalCongestion} is False.
+
+\newpage
+
+\subsection{The Classifier - StepRoute}
+\label{appdx:SR}
+\singlespacing
+\begin{algorithm}[!htbp]
+\label{alg:SR}
+\caption{The StepRoute Algorithm}
+ \begin{algorithmic}
+
+  \REQUIRE The destination network $dstNet$, the sorted set (from shortest to longest path) of available ports, $P$, for this destination. The set of routing masks, $RM$ associated to each possible next hop and the local routing mask $LRM$. The latest update vectors for each possible next hop and the local router, $UV$ and $LUV$ respectively.
+  \ENSURE The output port, $R$, associated with the path containing lowest congestion or the path along the shortest path.
+  
+  
+  
+  \STATE $LocalCongestion = ObtainCongestionStatus(LUV, LRM,  dstnet)$
+  \STATE $ (max, port) = (0, ports[0])$
+  \IF {LocalCongestion contains all False or LocalCongestion contains all True}
+  	\FOR {each $p \in P$}
+		\STATE $RemoteCongestion = ObtainCongestionStatus(UV_{p}, RM_{p}, dstnet)$
+		\IF {RemoteCongestion contains all False}
+			\RETURN p
+		\ELSE
+			
+			\IF {$class > RemoteCongestionStatus.getCongestionClass(p)$}
+				\STATE (class, port) = (RemoteCongestionStatus.getCongestionClass(), port)
+			\ENDIF
+		\ENDIF
+	\ENDFOR
+	\RETURN port	
+  \ELSE %{$LocalCongestion contains some False$}
+  	\FOR {each $p \in P $}
+		\STATE $localCongestionClass = LocalCongestion.getCongestionClass(p)$
+		\STATE $RemoteCongestion = ObtainCongestionStatus(UV_{p}, RM_{p}, dstnet)$
+		\STATE $remoteCongestionClass =  RemoteCongestion.getCongestionClass(p)$
+		\STATE $overallCongestion = localCongestionClass + remoteCongestioClass$
+		\IF {$max > overallCongestion$}
+				\STATE (max, port) = (overallCongestion, port)
+		\ENDIF
+	\ENDFOR	 
+	\RETURN port 
+  \ENDIF
+ \end{algorithmic}
+\end{algorithm}
+
+\textit{ObtainCongestionStatus} compares the local update vector with the routing mask, and using the destination network id returns the bitset of congestion indications which matches the order of the set of ports \textit{P}.
+
+\textit{getCongestionClass(p)} returns a value representing the congestion class for the link associated to the port p.
+
+\newpage
+
+\subsection{The Know-it-all - PathRoute}
+\label{appdx:PR}
+\singlespacing
+\begin{algorithm}[!htbp]
+\label{alg:PR}
+\caption{The PathRoute Algorithm}
+ \begin{algorithmic}
+  \REQUIRE The destination network $dstNet$, the sorted set (from shortest to longest path) of available ports, $P$, for this destination. The RM for the local routing mask $LRM$. The latest update vectors for the local router, $LUV$.
+  \ENSURE The output port, $R$, associated with the path containing lowest congestion or the path along the shortest path.
+  
+  \COMMENT{\textbf {ObtainCongestionStatus compares the local update vector with the routing mask, and using the destination network id returns the bitset of congestion indications which matches the order of the set of ports } \textit{P.} \textbf{In this case, we only obtain the local congestion as it will contain the congestion for the entire path.}}
+  
+  \STATE {$ (max, port) = (MAXINT, ports[0])$}
+  \STATE congestion = ObtainCongestionStatus(LUV, LRM, dstnet)
+  \FOR {each $p \in P $}
+  	\STATE{ $congOnPath = congestion.getUncongestedLinksOnPathStartingAt(p)$}
+	\IF {$congOnPath = Distanceto(dstnet)$}
+		\RETURN p
+	\ENDIF
+  	\IF{$ max > congOnPath$}
+		\STATE $(max, port) = (congOnPath, port)$
+	\ENDIF
+\ENDFOR
+\RETURN port
+  
+ \end{algorithmic}
+\end{algorithm}
+% ------------------------------------------------------------------------
+
+%%% Local Variables: 
+%%% mode: latex
+%%% TeX-master: "../thesis"
+%%% End: 
